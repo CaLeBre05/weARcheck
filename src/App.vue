@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="navbar">
+      <router-link to="/">Home</router-link>
+      <router-link to="/scan">About</router-link>
+      <router-link to="/settings">Settings</router-link>
     </nav>
     <router-view />
   </div>
@@ -13,20 +14,25 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.navbar {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  flex: 1 1 0px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.navbar>* {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 </style>
