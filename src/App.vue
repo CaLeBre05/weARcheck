@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <nav class="navbar">
-      <router-link to="/">Home</router-link>
-      <router-link to="/scan">About</router-link>
-      <router-link to="/settings">Settings</router-link>
+      <router-link to="/" class="link"><img src="./assets/img/home.png" class="img"><br></router-link>
+      
+      <router-link to="/scan" class="link" ><img src="./assets/img/scan.png" class="img"></router-link>
+      <router-link to="/settings" class="link" ><img src="./assets/img/menu.png" class="img"></router-link>
     </nav>
     <router-view />
   </div>
@@ -28,6 +29,15 @@
   height: 50px;
 }
 
+.img{
+  max-width: 70%;
+  height: 70%;
+}
+
+.img:hover{
+  filter: invert(50%);
+}
+
 .navbar>* {
   flex: 1;
   display: flex;
@@ -36,3 +46,5 @@
   height: 100%;
 }
 </style>
+
+
