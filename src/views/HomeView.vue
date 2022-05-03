@@ -1,12 +1,11 @@
 <template>
 <div>
     <div class="header">
-      <div id="headline">Home</div>
+      <div id="headline">weAR check</div>
     </div>
     <div class="boxes">
-        <div class="boxContent" id="siegel">Siegel</div>
-        <div class="boxContent" id="wsk">Wertschöpfungskette</div>
-        <p>News</p>
+        <div class="boxContent" id="siegelBox"><p id="siegel">Siegel</p></div>
+        <div class="boxContent" id="wskBox"><p id="wsk">Wertschöpfungskette</p></div>
         <div class="boxContent" id="slidingWindows">Sliding Windows</div>
     </div>
 </div>
@@ -22,48 +21,76 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  display: flex;
-  justify-content: center;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 #headline {
-    font-size: 32px;
+    font-size: 16px;
     background-color: #34A0A4;
-    background-color: 0.7;
-    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
-    border-radius: 10px;
-    padding: 8%;
-    border: 1px solid black;
 }
 
 .boxes {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3em;
     align-content: space-between;
 }
 
 .boxContent {
     border: 1px solid black;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 2em;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 24px;
+}
+
+#siegelBox {
+    background-image: url("@/assets/fairtrade-kleidung-siegel-ueberblick.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    position:relative;
+    height: 4em;
 }
 
 #siegel {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: #C1A285;
+    bottom: 0;
+    left: 33%;
 }
+#wskBox {
+    position: relative;
+    background-image: url("@/assets/Airplane.jpg");
+    background-repeat: no-repeat;
+    background-size:50%;
+    height: 4em;
+    background-position: center;
+}
+
 #wsk {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: #D9ED92;
+    bottom: 0;
 }
 #slidingWindows {
+    position: absolute;
     background-color: #34A0A4;
-    margin-top: 15%;
+    bottom: 3em;
 }
 </style>
