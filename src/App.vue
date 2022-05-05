@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <HomeView/>
     <nav class="navbar">
       <router-link to="/">Home</router-link>
       <router-link to="/scan">About</router-link>
@@ -8,6 +9,18 @@
     <router-view />
   </div>
 </template>
+
+<script>
+import HomeView from './views/HomeView.vue'
+
+export default {
+    name: "App",
+    views: {
+        HomeView
+    }
+}
+</script>
+
 
 <style>
 #app {
