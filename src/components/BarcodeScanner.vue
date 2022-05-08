@@ -17,12 +17,7 @@ import { Html5Qrcode } from "html5-qrcode";
 
 export default {
   name: "BarcodeScanner",
-  props: {
-    isActive: {
-      type: Boolean,
-      default: true,
-    },
-  },
+  props: {},
   data() {
     return {
       cameras: [],
@@ -33,17 +28,11 @@ export default {
       boxSize: 0,
     };
   },
-  watch: {
-    isActive: function () {
-      this.html5QrCode.stop().then((ignore) => {
-        this.$emit("stopped", true);
-      });
-    },
-  },
   created() {
     window.addEventListener("resize", this.myEventHandler);
   },
   destroyed() {
+    this.html5QrCode.stop();
     window.removeEventListener("resize", this.myEventHandler);
   },
   mounted() {

@@ -1,9 +1,6 @@
 <template>
   <div class="fullscreen">
-    <BarcodeScanner
-      :isActive="this.isActive"
-      @stopped="scanStopped = true"
-    ></BarcodeScanner>
+    <BarcodeScanner @stopped="scanStopped = true"></BarcodeScanner>
   </div>
 </template>
 
@@ -19,7 +16,6 @@ export default {
     return {
       message: "Hello, the code is: ",
       code: "not yet defined",
-      isActive: true,
       scanStopped: false,
     };
   },
@@ -31,10 +27,6 @@ export default {
       }
       return;
     },
-  },
-  beforeRouteLeave(to, from, next) {
-    this.isActive = false;
-    this.waitForScanToStop().then(() => next());
   },
 };
 </script>
