@@ -81,7 +81,7 @@ export default {
 .boxes {
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 1em;
     align-content: space-between;
 }
 
