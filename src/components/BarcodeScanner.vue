@@ -26,13 +26,16 @@ export default {
       windowWidth: window.innerWidth,
       html5QrCode: "",
       boxSize: 0,
+      sActive: false,
     };
   },
   created() {
     window.addEventListener("resize", this.myEventHandler);
   },
   destroyed() {
-    this.html5QrCode.stop();
+    if (this.isActive) {
+      this.html5QrCode.stop();
+    }
     window.removeEventListener("resize", this.myEventHandler);
   },
   mounted() {
@@ -66,6 +69,7 @@ export default {
             this.onDecoded(decodedText, decodedResult);
           }
         )
+        .then(() => (this.isActive = true))
         .catch((errorMessage) => {
           console.log(errorMessage);
         });
@@ -74,6 +78,7 @@ export default {
       this.html5QrCode
         .stop()
         .then((ignore) => {
+          this.isActive = false;
           document.getElementById("result").innerHTML = decodedText;
           console.log(decodedResult);
         })
@@ -83,9 +88,14 @@ export default {
     },
     changeCamera() {
       this.selectedCamera = (this.selectedCamera + 1) % this.cameras.length;
-      this.html5QrCode.stop().then((ignore) => {
+      if (this.isActive) {
+        this.html5QrCode.stop().then((ignore) => {
+          this.isActive = false;
+          this.startScan();
+        });
+      } else {
         this.startScan();
-      });
+      }
     },
   },
 };
