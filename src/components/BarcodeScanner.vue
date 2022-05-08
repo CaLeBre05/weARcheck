@@ -35,7 +35,7 @@ export default {
   },
   watch: {
     isActive: function () {
-      this.html5QrCode.stop().then(() => {
+      this.html5QrCode.stop().then((ignore) => {
         this.$emit("stopped", true);
       });
     },
@@ -53,7 +53,6 @@ export default {
     Html5Qrcode.getCameras()
       .then((devices) => {
         if (devices && devices.length) {
-          console.log("found devices: ", devices);
           devices.forEach((device) => {
             this.cameras.push(device);
           });
@@ -85,7 +84,7 @@ export default {
     onDecoded(decodedText, decodedResult) {
       this.html5QrCode
         .stop()
-        .then(() => {
+        .then((ignore) => {
           document.getElementById("result").innerHTML = decodedText;
           console.log(decodedResult);
         })
@@ -95,7 +94,7 @@ export default {
     },
     changeCamera() {
       this.selectedCamera = (this.selectedCamera + 1) % this.cameras.length;
-      this.html5QrCode.stop().then(() => {
+      this.html5QrCode.stop().then((ignore) => {
         this.startScan();
       });
     },
@@ -119,5 +118,8 @@ export default {
   position: absolute;
   top: 40px;
   right: 20px;
+}
+.result {
+  color: white;
 }
 </style>
