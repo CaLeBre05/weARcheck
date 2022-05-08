@@ -13,17 +13,23 @@
 
 <script>
 import HomeView from './views/HomeView.vue'
+import BackButton from './components/backButton.vue'
 
 export default {
     name: "App",
     views: {
         HomeView
-    }
+    },
+    components: { BackButton }
 }
 </script>
 
 
 <style>
+#bb {
+  top: 3em;
+  left: 3em;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

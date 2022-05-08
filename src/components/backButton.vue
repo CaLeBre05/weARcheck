@@ -9,6 +9,12 @@
     border: none;
     background-color:lightgray;
     position: absolute;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .75em;
+    padding-right: .75em;
+    opacity: .7;
+    font-weight: bold;
 }
 </style>
 
