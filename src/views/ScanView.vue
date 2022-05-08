@@ -4,19 +4,16 @@
       :isActive="this.isActive"
       @stopped="scanStopped = true"
     ></BarcodeScanner>
-    <!--<QrCodeScanner></QrCodeScanner>-->
   </div>
 </template>
 
 <script>
 import BarcodeScanner from "../components/BarcodeScanner.vue";
-import QrCodeScanner from "@/components/QrCodeScanner.vue";
 
 export default {
   name: "ScanView",
   components: {
     BarcodeScanner,
-    QrCodeScanner,
   },
   data() {
     return {
