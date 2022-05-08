@@ -1,55 +1,62 @@
 <template>
-    <div>
-        <div>Scan</div>
-        <div class="fullscreen">
-            <StreamBarcodeReader @decode="onDecode" @loaded="onLoaded"></StreamBarcodeReader>
-        </div>
-        <div class="code">{{ message }}<span v-if="code">{{ code }}</span>
-        </div>
-    </div>
+  <div class="fullscreen">
+    <BarcodeScanner
+      :isActive="this.isActive"
+      @stopped="scanStopped = true"
+    ></BarcodeScanner>
+    <!--<QrCodeScanner></QrCodeScanner>-->
+  </div>
 </template>
 
 <script>
-import { StreamBarcodeReader } from "vue-barcode-reader";
+import BarcodeScanner from "../components/BarcodeScanner.vue";
+import QrCodeScanner from "@/components/QrCodeScanner.vue";
+
 export default {
-    name: "ScanView",
-    components: {
-        StreamBarcodeReader
+  name: "ScanView",
+  components: {
+    BarcodeScanner,
+    QrCodeScanner,
+  },
+  data() {
+    return {
+      message: "Hello, the code is: ",
+      code: "not yet defined",
+      isActive: true,
+      scanStopped: false,
+    };
+  },
+  methods: {
+    async waitForScanToStop() {
+      if (this.scanStopped === false) {
+        setTimeout(this.waitForScanToStop, 50);
+        return;
+      }
+      return;
     },
-    data() {
-        return {
-            message: 'Hello, the code is: ',
-            code: 'not yet defined'
-        }
-    },
-    methods: {
-        onDecode(result) {
-            console.log('result:', result);
-            this.code = result;
-            console.log(code);
-        },
-        onLoaded(result) { }
-    }
+  },
+  beforeRouteLeave(to, from, next) {
+    this.isActive = false;
+    this.waitForScanToStop().then(() => next());
+  },
 };
 </script>
 
-<style>
-.fullscreen {
-    position: fixed;
-    top: 0;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: black;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+<style scoped>
+* {
+  margin: 0 !important;
 }
 
-.code {
-    color: azure;
-    z-index: 200;
-    position: absolute;
+.fullscreen {
+  position: fixed;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  overflow: hidden;
 }
 </style>
