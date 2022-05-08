@@ -119,7 +119,8 @@ export default {
   top: 40px;
   right: 20px;
 }
-.result {
+#result {
   color: white;
+  font-size: 20px;
 }
 </style>
