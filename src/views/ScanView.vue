@@ -19,15 +19,7 @@ export default {
       scanStopped: false,
     };
   },
-  methods: {
-    async waitForScanToStop() {
-      if (this.scanStopped === false) {
-        setTimeout(this.waitForScanToStop, 50);
-        return;
-      }
-      return;
-    },
-  },
+  methods: {},
 };
 </script>
 
