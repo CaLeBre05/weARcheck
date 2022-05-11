@@ -51,13 +51,13 @@ export default {
    justify-content: flex-end;
    align-items: center;
    flex-shrink: 0;
-   border: 1px solid black;
 }
 
 .carousel-container {
    margin: 1em;
    box-shadow: 3px 3px 20px;
    display: flex;
+   border: 1px solid black;
    /*overflow: hidden;*/
 }
 hr {
