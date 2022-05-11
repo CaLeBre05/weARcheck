@@ -11,9 +11,13 @@
     <div id="news">News<hr></div>
     <div class="carousel-container">
        <div class="carousel-slide">
-          <div class="slide">
-             <div class="button" id="firstSlide">First Slide</div>
-          </div>
+          <div class="button" id="firstSlide">First Slide</div>
+       </div>
+       <div class="carousel-slide">
+          <div class="button" id="secondSlide">Second Slide</div>
+       </div>
+       <div class="carousel-slide">
+          <div class="button" id="thirdSlide">Third Slide</div>
        </div>
     </div>
 </div>
@@ -31,7 +35,7 @@ export default {
     margin: 0;
 }
 
-#firstSlide {
+#firstSlide, #secondSlide, #thirdSlide {
    background-color: #34a0a4;
 }
 
@@ -39,23 +43,22 @@ export default {
    display: flex;
    width: 100%;
    height: 200px;
-}
-
-.slide {
-   width: 100%;
    background-image: url("@/assets/fast_fashion.jpg");
-   height: 200px;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   display: flex;
    flex-direction: column;
    justify-content: flex-end;
    align-items: center;
-}
-.carousel-container {
+   flex-shrink: 0;
    border: 1px solid black;
+}
+
+.carousel-container {
    margin: 1em;
+   box-shadow: 3px 3px 20px;
+   display: flex;
+   /*overflow: hidden;*/
 }
 hr {
    border-top: 1px solid black;
