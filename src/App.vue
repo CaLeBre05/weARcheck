@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <nav class="navbar">
-      <router-link to="/" class="link"><img src="./assets/img/home.png" class="img"><br></router-link>
+    <nav class="navbar" >
+      <router-link to="/" class="link"><img src="./assets/img/home.png" class="img"></router-link>
       
       <router-link to="/scan" class="link" ><img src="./assets/img/scan.png" class="img"></router-link>
       <router-link to="/settings" class="link" ><img src="./assets/img/menu.png" class="img"></router-link>
@@ -16,10 +16,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  font-family: 'Nunito', sans-serif;
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   display: flex;
@@ -27,6 +28,8 @@
   align-items: center;
   width: 100%;
   height: 50px;
+  background-color: white;
+  border-top-color: black;
 }
 
 .img{
@@ -45,6 +48,17 @@
   justify-content: center;
   height: 100%;
 }
+
 </style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+</style>
+
+<script>
+
+
+</script>
 
 
