@@ -1,5 +1,5 @@
 <template>
-    <input type="button" class="backButton" value="<" onclick="goBack()">
+    <input type="button" class="backButton" value="<" @click="goBack()">
 </template>
 
 <style scoped>
@@ -26,10 +26,6 @@ export default{
             this.$router.go(-1);
         }
     }
-}
-
-function goBack() {
-    this.$router.go(-1);
 }
 
 </script>
