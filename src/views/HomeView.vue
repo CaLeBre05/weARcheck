@@ -74,7 +74,6 @@ hr {
 .wsk, .siegel {
    height: 200px;
    margin: 1em;
-   border: 1px solid black;
    width: 100%;
    display: flex;
    justify-content: center;
