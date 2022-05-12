@@ -13,6 +13,8 @@
     padding-bottom: .5em;
     padding-left: .75em;
     padding-right: .75em;
+    left: 2em;
+    top: 2em;
     opacity: .7;
     font-weight: bold;
 }

@@ -1,16 +1,19 @@
 <template>
-    <div>Scan
-        <BackButton/>
-    </div>
+<div>
+    <BackButton/>
+</div>
 </template>
 
 <script>
 import BackButton from '@/components/backButton.vue';
 
 export default {
-    name: "ScanView",
-    components: {
-    BackButton
-},
-};
+    name: "WSKstartScreen",
+    components: { BackButton }
+}
+
 </script>
+
+<style>
+
+</style>

@@ -5,7 +5,7 @@
          <div id="siegelButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/scan">Siegel</router-link></div>
       </div>
       <div id="wsk" class="wsk">
-         <div id="wskButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/settings">Wertschöpfungskette</router-link></div>
+         <div id="wskButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/WSK">Wertschöpfungskette</router-link></div>
       </div>
     </div>
     <div id="news">News<hr></div>
