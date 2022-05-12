@@ -40,7 +40,7 @@ export default {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   display: flex;
@@ -48,6 +48,8 @@ export default {
   align-items: center;
   width: 100%;
   height: 50px;
+  background-color: white;
+  border-top-color: black;
 }
 
 .img {
@@ -71,5 +73,8 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 </style>
+
+<script>
+</script>
 
 
