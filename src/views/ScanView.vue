@@ -1,16 +1,14 @@
 <template>
-    <div>Scan
-        <BackButton @click="goBack"></BackButton>
-    </div>
+  <div>Scan</div>
 </template>
 
 <script>
-import BackButton from '@/components/backButton.vue';
+import BackButton from "@/components/backButton.vue";
 
 export default {
-    name: "ScanView",
-    components: {
-    BackButton
-},
+  name: "ScanView",
+  components: {
+    BackButton,
+  },
 };
 </script>

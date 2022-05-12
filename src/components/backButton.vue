@@ -1,31 +1,32 @@
 <template>
-    <input type="button" class="backButton" value="<" @click="goBack()">
+  <button type="submit" class="backButton" @click="goBack()">
+    <img src="../assets/svg/back-arrow.svg" />
+  </button>
 </template>
 
 <style scoped>
 .backButton {
-    text-align: center;
-    border-radius: 50px;
-    border: none;
-    background-color:lightgray;
-    position: absolute;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: .75em;
-    padding-right: .75em;
-    opacity: .7;
-    font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.7);
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  top: 4em;
+  left: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
 
 <script>
-export default{
-    name: "backButton",
-    methods: {
-        goBack() {
-            this.$router.go(-1);
-        }
-    }
-}
-
+export default {
+  name: "backButton",
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
+  },
+};
 </script>
