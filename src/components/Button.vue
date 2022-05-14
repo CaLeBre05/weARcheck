@@ -12,7 +12,7 @@
   </span>
 </button>
 
-  </template>
+</template>
 
 <script>
 
@@ -32,7 +32,7 @@ export default {
 </script>
 
 
-  <style>
+<style>
 
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');

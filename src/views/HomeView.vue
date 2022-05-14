@@ -24,7 +24,6 @@ export default {
   display: flex;
   justify-content: center;
 }
-
 #headline {
     font-size: 32px;
     background-color: #34A0A4;
@@ -35,7 +34,6 @@ export default {
     padding: 8%;
     border: 1px solid black;
 }
-
 .boxes {
     display: flex;
     flex-direction: column;
@@ -43,7 +41,6 @@ export default {
     margin-bottom: 10px;
     align-content: space-between;
 }
-
 .boxContent {
     border: 1px solid black;
     text-align: center;
@@ -53,7 +50,6 @@ export default {
     border-radius: 10px;
     font-size: 20px;
 }
-
 #siegel {
     background-color: #C1A285;
 }

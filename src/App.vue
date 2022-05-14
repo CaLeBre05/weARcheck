@@ -19,7 +19,6 @@
   color: #2c3e50;
   font-family: 'Nunito', sans-serif;
 }
-
 .navbar {
   position: fixed;
   bottom: 0px;
@@ -32,16 +31,13 @@
   background-color: white;
   border-top-color: black;
 }
-
 .img{
   max-width: 70%;
   height: 70%;
 }
-
 .img:hover{
   filter: invert(50%);
 }
-
 .navbar>* {
   flex: 1;
   display: flex;
@@ -49,22 +45,19 @@
   justify-content: center;
   height: 100%;
 }
-
 </style>
 
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
 </style>
 
 <script>
 import HomeView from './views/HomeView.vue';
+import SettingsView from './views/SettingsView.vue';
 export default {
     components: {
 HomeView,
+SettingsView,
     },
 };
 </script>
-
-
