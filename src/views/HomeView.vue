@@ -1,4 +1,5 @@
 <template>
+
 <div>
     <div class="header">
       <div id="headline">Home</div>
@@ -14,10 +15,7 @@
 
 <script>
 export default {
-    name: "HomeView",
-    components: {
-
-    },
+    name: "HomeView"
 };
 </script>
 

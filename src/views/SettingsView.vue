@@ -6,7 +6,6 @@
 export default {
     name: "SettingsView",
     components: {
-
     },
 };
 </script>

@@ -6,6 +6,7 @@
       <router-link to="/scan" class="link" ><img src="./assets/img/scan.png" class="img"></router-link>
       <router-link to="/settings" class="link" ><img src="./assets/img/menu.png" class="img"></router-link>
     </nav>
+  
     <router-view />
   </div>
 </template>
@@ -52,13 +53,18 @@
 </style>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 </style>
 
 <script>
-
-
+import HomeView from './views/HomeView.vue';
+export default {
+    components: {
+HomeView,
+    },
+};
 </script>
 
 
