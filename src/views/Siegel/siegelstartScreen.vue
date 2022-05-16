@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="picContainerSiegel">
-        <div class="ueberschrift">Siegel</div>
+        <div class="ueberschriftSiegel">Siegel</div>
     </div>
     <BackButton/>
     <div class="flexContainerSiegel">
@@ -59,7 +59,7 @@ export default {
     background-position: center;
     box-shadow: 3px 3px 20px;
 }
-.ueberschrift {
+.ueberschriftSiegel {
     position: absolute;
     bottom: -10px;
     text-align: center;
