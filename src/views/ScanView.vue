@@ -4,7 +4,8 @@
       <!--<BarcodeScanner @stopped="scanStopped = true"></BarcodeScanner>-->
       <!--<ARComponent></ARComponent>-->
       <!--<TestARComponent></TestARComponent>-->
-      <Unity></Unity>
+      <!--<Unity></Unity>-->
+      <TestUnityComponent2></TestUnityComponent2>
     </div>
   </div>
 </template>
@@ -14,6 +15,7 @@ import BarcodeScanner from "../components/BarcodeScanner.vue";
 import ARComponent from "@/components/ARComponent.vue";
 import TestARComponent from "@/components/TestARComponent.vue";
 import Unity from "@/components/TestUnityComponent.vue";
+import TestUnityComponent2 from "@/components/TestUnityComponent2.vue";
 
 export default {
   name: "ScanView",
@@ -22,6 +24,7 @@ export default {
     ARComponent,
     TestARComponent,
     Unity,
+    TestUnityComponent2,
   },
   data() {
     return {
