@@ -5,10 +5,9 @@
       <div id="siegel" class="siegel">
          <div id="siegelButton" class="button">Siegel</div>
       </div></router-link>
-      <router-link style="text-decoration: none; color: inherit;" to="/WSK">
       <div id="wsk" class="wsk">
-         <div id="wskButton" class="button">Wertschöpfungskette</div>
-      </div></router-link>
+         <div id="wskButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/WSK">Wertschöpfungskette</router-link></div>
+      </div>
     </div>
     <div id="news">News<hr></div>
     <div class="carousel-container">
@@ -89,7 +88,6 @@ hr {
    justify-content: center;
    align-items: center;
    margin: 1em;
-   
 }
 
 .wsk, .siegel {
