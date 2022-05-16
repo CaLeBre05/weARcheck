@@ -1,10 +1,10 @@
 <template>
 <div>
     <div class="picContainer">
-        <div class="ueberschrift">Wertschöpfungskette</div>
+        <div class="ueberschrift">Siegel</div>
     </div>
     <BackButton/>
-    <div class="flexContainerWSK">
+    <div class="flexContainerSiegel">
         <div class="placeHolder"></div>
         <div class="placeHolder"></div>
         <div class="placeHolder"></div>
@@ -19,7 +19,7 @@
 import BackButton from '@/components/backButton.vue';
 
 export default {
-    name: "WSKstartScreen",
+    name: "siegelstartScreen",
     components: { BackButton }
 }
 
@@ -36,7 +36,7 @@ export default {
     height: 60px;
     border: 1px solid black;
 }
-.flexContainerWSK {
+.flexContainerSiegel {
     display: flex;
     flex-direction: column;
     height: 520px;
@@ -53,7 +53,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url("@/assets/plane.jpg");
+    background-image: url("@/assets/siegel_aufmacher.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,7 +68,7 @@ export default {
     padding-right: 1em;
     padding-top: .5em;
     padding-bottom: .5em;
-    background-color: #d9ed92;
+    background-color:#c1a285;
     font-size: 1.7em;
     font-weight: bolder;
     box-shadow: 3px 3px 20px;

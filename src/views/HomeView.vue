@@ -2,7 +2,7 @@
 <div>
     <div id="flexContainter" class="flexContainer">
       <div id="siegel" class="siegel">
-         <div id="siegelButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/scan">Siegel</router-link></div>
+         <div id="siegelButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/Siegel">Siegel</router-link></div>
       </div>
       <div id="wsk" class="wsk">
          <div id="wskButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/WSK">Wertschöpfungskette</router-link></div>
@@ -11,13 +11,13 @@
     <div id="news">News<hr></div>
     <div class="carousel-container">
        <div class="carousel-slide">
-          <div class="button" id="firstSlide">First Slide</div>
+          <div class="slideButton" id="firstSlide">Ausbeute trifft oft Frauen</div>
        </div>
        <div class="carousel-slide">
-          <div class="button" id="secondSlide">Second Slide</div>
+          <div class="slideButton" id="secondSlide">Second Slide</div>
        </div>
        <div class="carousel-slide">
-          <div class="button" id="thirdSlide">Third Slide</div>
+          <div class="slideButton" id="thirdSlide">Third Slide</div>
        </div>
     </div>
 </div>
@@ -37,12 +37,23 @@ export default {
 
 #firstSlide, #secondSlide, #thirdSlide {
    background-color: #34a0a4;
+   color: white;
+}
+
+.slideButton {
+   position: absolute;
+   bottom: 10px;
+   text-align: center;
+   font-size: 1.2em;
+   padding: 0.7em;
+   display: inline-block;
+   box-shadow: 3px 3px 20px #000000;
 }
 
 .carousel-slide {
    display: flex;
    width: 100%;
-   height: 200px;
+   height: 250px;
    background-image: url("@/assets/fast_fashion.jpg");
    background-size: cover;
    background-repeat: no-repeat;
@@ -51,14 +62,17 @@ export default {
    justify-content: flex-end;
    align-items: center;
    flex-shrink: 0;
+   position: relative;
 }
 
 .carousel-container {
-   margin: 1em;
+   margin-top: 2em;
+   margin-left: 1em;
+   margin-right: 1em;
    box-shadow: 3px 3px 20px;
    display: flex;
    border: 1px solid black;
-   /*overflow: hidden;*/
+   overflow: hidden;
 }
 hr {
    border-top: 1px solid black;
@@ -79,6 +93,7 @@ hr {
    justify-content: center;
    align-items: flex-end;
    box-shadow: 3px 3px 20px;
+   position: relative;
 }
 
 .wsk {
@@ -97,8 +112,11 @@ hr {
    background-position: center;
 }
 .button {
+   position: absolute;
+   bottom: -10px;
    text-align: center;
-   font-size: 1.2em;
+   font-size: 1.6em;
+   font-weight:bolder;
    padding: 0.7em;
    display: inline-block;
    box-shadow: 3px 3px 20px;
