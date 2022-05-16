@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="picContainer">
+    <div class="picContainerSiegel">
         <div class="ueberschrift">Siegel</div>
     </div>
     <BackButton/>
@@ -46,7 +46,7 @@ export default {
     justify-content: space-between;
 }
 
-.picContainer {
+.picContainerSiegel {
     position: relative;
     height: 300px;
     width: 100%;
