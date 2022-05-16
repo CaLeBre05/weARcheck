@@ -1,21 +1,27 @@
 <template>
   <div>
     <div class="fullscreen">
-      <BarcodeScanner @stopped="scanStopped = true"></BarcodeScanner>
+      <!--<BarcodeScanner @stopped="scanStopped = true"></BarcodeScanner>-->
+      <!--<ARComponent></ARComponent>-->
+      <!--<TestARComponent></TestARComponent>-->
+      <Unity></Unity>
     </div>
-    <ARComponent></ARComponent>
   </div>
 </template>
 
 <script>
 import BarcodeScanner from "../components/BarcodeScanner.vue";
 import ARComponent from "@/components/ARComponent.vue";
+import TestARComponent from "@/components/TestARComponent.vue";
+import Unity from "@/components/TestUnityComponent.vue";
 
 export default {
   name: "ScanView",
   components: {
     BarcodeScanner,
     ARComponent,
+    TestARComponent,
+    Unity,
   },
   data() {
     return {
