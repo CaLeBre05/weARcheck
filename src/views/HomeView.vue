@@ -1,12 +1,14 @@
 <template>
 <div>
     <div id="flexContainter" class="flexContainer">
+      <router-link class="router" style="text-decoration: none; color: inherit;" to="/Siegel">
       <div id="siegel" class="siegel">
-         <div id="siegelButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/Siegel">Siegel</router-link></div>
-      </div>
+         <div id="siegelButton" class="button">Siegel</div>
+      </div></router-link>
+      <router-link style="text-decoration: none; color: inherit;" to="/WSK">
       <div id="wsk" class="wsk">
-         <div id="wskButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/WSK">Wertschöpfungskette</router-link></div>
-      </div>
+         <div id="wskButton" class="button">Wertschöpfungskette</div>
+      </div></router-link>
     </div>
     <div id="news">News<hr></div>
     <div class="carousel-container">
@@ -35,6 +37,10 @@ export default {
     margin: 0;
 }
 
+.router {
+   width: 100%;
+   margin-top: 1em;
+}
 #firstSlide, #secondSlide, #thirdSlide {
    background-color: #34a0a4;
    color: white;
@@ -83,11 +89,11 @@ hr {
    justify-content: center;
    align-items: center;
    margin: 1em;
+   
 }
 
 .wsk, .siegel {
    height: 200px;
-   margin: 1em;
    width: 100%;
    display: flex;
    justify-content: center;
