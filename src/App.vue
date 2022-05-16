@@ -1,27 +1,28 @@
 <template>
   <div id="app">
-    <HomeView/>
     <nav class="navbar">
-      <router-link to="/" class="link"><img src="./assets/img/home.png" class="img"><br></router-link>
-      
-      <router-link to="/scan" class="link" ><img src="./assets/img/scan.png" class="img"></router-link>
-      <router-link to="/settings" class="link" ><img src="./assets/img/menu.png" class="img"></router-link>
+      <router-link to="/" class="link"
+        ><img src="./assets/img/home.png" class="img"
+      /></router-link>
+      <router-link to="/scan" class="link"
+        ><img src="./assets/img/scan.png" class="img"
+      /></router-link>
+      <router-link to="/settings" class="link"
+        ><img src="./assets/img/menu.png" class="img"
+      /></router-link>
     </nav>
     <router-view />
   </div>
 </template>
 
 <script>
-import HomeView from './views/HomeView.vue'
-import BackButton from './components/backButton.vue'
+import HomeView from "./views/HomeView.vue";
+import BackButton from "./components/backButton.vue";
 
 export default {
-    name: "App",
-    views: {
-        HomeView
-    },
-    components: { BackButton }
-}
+  name: "App",
+  components: { BackButton, HomeView },
+};
 </script>
 
 
@@ -34,11 +35,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   display: flex;
@@ -46,29 +47,34 @@ export default {
   align-items: center;
   width: 100%;
   height: 50px;
+  background-color: white;
+  border-top-color: black;
+  z-index: 100;
 }
 
-.img{
+.img {
   max-width: 70%;
   height: 70%;
 }
 
-.img:hover{
+.img:hover {
   filter: invert(50%);
 }
 
-.navbar>* {
+.navbar > * {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-
 </style>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 </style>
+
+<script>
+</script>
 
 
