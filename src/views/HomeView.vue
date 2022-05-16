@@ -1,10 +1,9 @@
 <template>
 <div>
     <div id="flexContainter" class="flexContainer">
-      <router-link class="router" style="text-decoration: none; color: inherit;" to="/Siegel">
       <div id="siegel" class="siegel">
-         <div id="siegelButton" class="button">Siegel</div>
-      </div></router-link>
+         <div id="siegelButton" class="button"><router-link class="router" style="text-decoration: none; color: inherit;" to="/Siegel">Siegel</router-link></div>
+      </div>
       <div id="wsk" class="wsk">
          <div id="wskButton" class="button"><router-link style="text-decoration: none; color: inherit;" to="/WSK">Wertschöpfungskette</router-link></div>
       </div>
@@ -36,10 +35,6 @@ export default {
     margin: 0;
 }
 
-.router {
-   width: 100%;
-   margin-top: 1em;
-}
 #firstSlide, #secondSlide, #thirdSlide {
    background-color: #34a0a4;
    color: white;
@@ -59,7 +54,7 @@ export default {
    display: flex;
    width: 100%;
    height: 250px;
-   background-image: url("@/assets/fast_fashion.jpg");
+   background-image: url("@/assets/img/fast_fashion.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -98,10 +93,11 @@ hr {
    align-items: flex-end;
    box-shadow: 3px 3px 20px;
    position: relative;
+   margin: 1em;
 }
 
 .wsk {
-   background-image: url("@/assets/plane.jpg");
+   background-image: url("@/assets/img/plane.jpg");
    height: 200px;
    background-size: cover;
    background-repeat: no-repeat;
@@ -109,7 +105,7 @@ hr {
 }
 
 .siegel {
-   background-image: url("@/assets/siegel_aufmacher.jpg");
+   background-image: url("@/assets/img/siegel_aufmacher.jpg");
    height: 200px;
    background-size: cover;
    background-repeat: no-repeat;

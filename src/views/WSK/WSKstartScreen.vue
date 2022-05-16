@@ -53,7 +53,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url("@/assets/plane.jpg");
+    background-image: url("@/assets/img/plane.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
