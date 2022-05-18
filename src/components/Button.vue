@@ -8,7 +8,7 @@
   :style="{
     'background-color': color,
   }">
-  <img src="../assets/img/forward.svg" class="icon" />
+  <img src="../assets/svg/forward.svg" class="icon" />
   </span>
 </button>
 
@@ -76,7 +76,7 @@ export default {
 
 .button__icon {
   float: right;
-  max-width: 25%;
+  width: 25%;
   background: rgba(0, 0, 0, 0.08);
   box-shadow: 10px 20px 15px silver;
 }
