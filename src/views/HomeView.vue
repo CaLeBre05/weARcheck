@@ -2,7 +2,7 @@
   <div>
     <div id="flexContainter" class="flexContainer">
       <div id="siegel" class="siegel">
-        <div id="siegelButton" class="button">
+        <div id="siegelButton" class="buttonHome">
           <router-link
             class="router"
             style="text-decoration: none; color: inherit"
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div id="wsk" class="wsk">
-        <div id="wskButton" class="button">
+        <div id="wskButton" class="buttonHome">
           <router-link style="text-decoration: none; color: inherit" to="/WSK"
             >Wertschöpfungskette</router-link
           >
@@ -130,7 +130,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
 }
-.button {
+.buttonHome {
   position: absolute;
   bottom: -10px;
   text-align: center;

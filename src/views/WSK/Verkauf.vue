@@ -3,13 +3,15 @@
     <div class="ueberschriftVerkauf">
       <div class="titelVerkauf">Verkauf</div>
     </div>
+    <BackButton />
   </div>
 </template>
 
 <style>
 .ueberschriftVerkauf {
   height: 300px;
-  border: 1px solid;
+  position: relative;
+  background-color: #bef781;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -17,14 +19,19 @@
 }
 
 .titelVerkauf {
-  border: 1px solid;
+  position: absolute;
+  bottom: -10px;
+  background-color: #fff;
   padding: 1em;
   font-size: 1.5em;
+  box-shadow: 3px 3px 20px;
 }
 </style>
 
 <script>
+import BackButton from "@/components/backButton.vue";
 export default {
   name: "Verkauf",
+  components: { BackButton },
 };
 </script>

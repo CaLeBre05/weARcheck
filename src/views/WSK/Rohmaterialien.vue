@@ -3,13 +3,15 @@
     <div class="ueberschriftRohmaterialien">
       <div class="titelRohmaterialien">Rohmaterialien</div>
     </div>
+    <BackButton />
   </div>
 </template>
 
 <style>
 .ueberschriftRohmaterialien {
+  background-color: #f5fbef;
+  position: relative;
   height: 300px;
-  border: 1px solid;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -17,14 +19,19 @@
 }
 
 .titelRohmaterialien {
-  border: 1px solid;
   padding: 1em;
   font-size: 1.5em;
+  position: absolute;
+  bottom: -10px;
+  background-color: #fff;
+  box-shadow: 3px 3px 20px;
 }
 </style>
 
 <script>
+import BackButton from "@/components/backButton.vue";
 export default {
   name: "Rohmaterialien",
+  components: { BackButton },
 };
 </script>
