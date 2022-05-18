@@ -5,12 +5,39 @@
     </div>
     <BackButton />
     <div class="flexContainerWSK">
-      <Button color="#F5FBEF">Rohmaterialien</Button>
-      <Button color="#ECF8E0">Anbieter</Button>
-      <Button color="#E3F6CE">Fabrik</Button>
-      <Button color="#D0F5A9">Verteilung</Button>
-      <Button color="#BEF781">Verkauf</Button>
-      <Button color="#ACFA58">Kunde</Button>
+      <router-link
+        style="text-decoration: none; color: inherit"
+        to="/WSK/Rohmaterialien"
+        ><Button color="#F5FBEF">Rohmaterialien</Button></router-link
+      >
+      <router-link
+        style="text-decoration: none; color: inherit"
+        to="/WSK/Anbieter"
+        ><Button color="#ECF8E0">Anbieter</Button></router-link
+      >
+      <router-link
+        style="text-decoration: none; color: inherit"
+        to="/WSK/Fabrik"
+        ><Button color="#E3F6CE">Fabrik</Button></router-link
+      >
+      <router-link
+        style="text-decoration: none; color: inherit"
+        to="/WSK/Verteilung"
+      >
+        <Button color="#D0F5A9">Verteilung</Button></router-link
+      >
+      <router-link
+        style="text-decoration: none; color: inherit"
+        to="/WSK/Verkauf"
+      >
+        <Button color="#BEF781">Verkauf</Button></router-link
+      >
+      <router-link
+        style="text-decoration: none; color: inherit"
+        to="/WSK/Kunde"
+      >
+        <Button color="#ACFA58">Kunde</Button></router-link
+      >
     </div>
   </div>
 </template>
