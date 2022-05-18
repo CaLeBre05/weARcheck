@@ -33,7 +33,6 @@ export default {
   left: 3em;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -50,6 +49,7 @@ export default {
   height: 50px;
   background-color: white;
   border-top-color: black;
+  z-index: 100;
 }
 
 .img {

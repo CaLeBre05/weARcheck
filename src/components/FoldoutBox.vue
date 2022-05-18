@@ -21,11 +21,15 @@ summary {
 	font-size: 20px;
 	position: relative;
 	line-height: 300%;
-	padding-left: 0;
+	margin-left: 0;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 summary::marker {
 	color: transparent;
+	font-size: 1px;
+
 }
 
 summary::after {
@@ -34,16 +38,16 @@ summary::after {
 	position: absolute;
 	top: 0;
 	right: 1em;
-	content: url(../assets/img/forward.svg);
+	content: url(../assets/svg/forward.svg);
 	font-size: 2em;
 	font-weight: bold;
 	text-align: right;
 	transition: transform 0.2s;
-	transform: translate(20px, 10px) rotate(90deg)
+	transform: translate(30px, 10px) rotate(90deg)
 }
 
 details[open] summary::after {
-	transform:translate(-10px, 9px) rotate(270deg) ;
+	transform:translate(0px, 9px) rotate(270deg) ;
 }
 
 
@@ -52,11 +56,9 @@ details p {
 	padding: 16px;
 	padding-top: 0;
 	font-size: 14px;
-	margin-top: 0;;
+	margin-bottom:0;
+	margin-top: 0;
 }
 
-h1 {
-	grid-column: 1 / -1;
-}
   </style>
   
