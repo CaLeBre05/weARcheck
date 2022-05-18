@@ -38,7 +38,6 @@ export default {
   color: #2c3e50;
   font-family: "Nunito", sans-serif;
 }
-
 .navbar {
   position: fixed;
   bottom: 0px;
@@ -75,7 +74,5 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 </style>
 
-<script>
-</script>
 
 
