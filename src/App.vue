@@ -11,6 +11,7 @@
         ><img src="./assets/img/menu.png" class="img"
       /></router-link>
     </nav>
+  
     <router-view />
   </div>
 </template>
