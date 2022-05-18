@@ -2,13 +2,13 @@
 
 <button v-on:click = "onClickButton(event)" type="button" class="button">
   <span class="button__text">
-    <slot name="header"></slot>
+    <slot></slot>
     </span>
   <span class="button__icon"
   :style="{
     'background-color': color,
   }">
-  <img src="../assets/img/forward.svg" class="icon" />
+  <img src="../assets/svg/forward.svg" class="icon" />
   </span>
 </button>
 
@@ -76,7 +76,7 @@ export default {
 
 .button__icon {
   float: right;
-  max-width: 20%;
+  width: 25%;
   background: rgba(0, 0, 0, 0.08);
   box-shadow: 10px 20px 15px silver;
 }
