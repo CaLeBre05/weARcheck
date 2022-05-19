@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="picContainer">
-      <div class="ueberschrift">Wertschöpfungskette</div>
+    <div class="picture-header">
+      <div class="picture-header-title">Wertschöpfungskette</div>
     </div>
     <BackButton />
     <div class="flexContainerWSK">
@@ -18,25 +18,25 @@
       <router-link
         style="text-decoration: none; color: inherit"
         to="/WSK/Fabrik"
-        ><Button color="#E3F6CE">Fabrik</Button></router-link
+        ><Button color="#ECF6CE">Fabrik</Button></router-link
       >
       <router-link
         style="text-decoration: none; color: inherit"
         to="/WSK/Verteilung"
       >
-        <Button color="#D0F5A9">Verteilung</Button></router-link
+        <Button color="#E1F5A9">Verteilung</Button></router-link
       >
       <router-link
         style="text-decoration: none; color: inherit"
         to="/WSK/Verkauf"
       >
-        <Button color="#BEF781">Verkauf</Button></router-link
+        <Button color="#d9ef92">Verkauf</Button></router-link
       >
       <router-link
         style="text-decoration: none; color: inherit"
         to="/WSK/Kunde"
       >
-        <Button color="#ACFA58">Kunde</Button></router-link
+        <Button color="#d9ed92">Kunde</Button></router-link
       >
     </div>
   </div>
@@ -58,10 +58,6 @@ export default {
   padding: 0;
 }
 
-.placeHolder {
-  height: 60px;
-  border: 1px solid black;
-}
 .flexContainerWSK {
   display: flex;
   flex-direction: column;
@@ -74,7 +70,7 @@ export default {
   justify-content: space-between;
 }
 
-.picContainer {
+.picture-header {
   position: relative;
   height: 300px;
   width: 100%;
@@ -87,7 +83,7 @@ export default {
   background-position: center;
   box-shadow: 3px 3px 20px;
 }
-.ueberschrift {
+.picture-header-title {
   position: absolute;
   bottom: -10px;
   text-align: center;

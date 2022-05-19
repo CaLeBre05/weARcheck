@@ -1,24 +1,24 @@
 <template>
   <div>
-    <div class="ueberschriftFabrik">
-      <div class="titelFabrik">Fabrik</div>
+    <div class="fabrik-header">
+      <div class="fabrik-header-title">Fabrik</div>
     </div>
     <BackButton />
   </div>
 </template>
 
 <style>
-.ueberschriftFabrik {
+.fabrik-header {
   height: 300px;
   position: relative;
-  background-color: #e3f6ce;
+  background-color: #ecf6ce;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   box-shadow: 3px 3px 20px;
 }
 
-.titelFabrik {
+.fabrik-header-title {
   position: absolute;
   bottom: -10px;
   background-color: #fff;

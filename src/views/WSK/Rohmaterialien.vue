@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="ueberschriftRohmaterialien">
-      <div class="titelRohmaterialien">Rohmaterialien</div>
+    <div class="rohmaterialien-header">
+      <div class="rohmaterialien-header-title">Rohmaterialien</div>
     </div>
     <BackButton />
   </div>
 </template>
 
 <style>
-.ueberschriftRohmaterialien {
+.rohmaterialien-header {
   background-color: #f5fbef;
   position: relative;
   height: 300px;
@@ -18,7 +18,7 @@
   box-shadow: 3px 3px 20px;
 }
 
-.titelRohmaterialien {
+.rohmaterialien-header-title {
   padding: 1em;
   font-size: 1.5em;
   position: absolute;

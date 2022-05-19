@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div id="flexContainter" class="flexContainer">
-      <div id="siegel" class="siegel">
-        <div id="siegelButton" class="buttonHome">
+    <div class="flex-container" id="flex-container">
+      <div class="siegel-background" id="siegel">
+        <div class="home-button" id="siegel-background-button">
           <router-link
             class="router"
             style="text-decoration: none; color: inherit"
@@ -11,15 +11,15 @@
           >
         </div>
       </div>
-      <div id="wsk" class="wsk">
-        <div id="wskButton" class="buttonHome">
+      <div class="wsk-background" id="wsk">
+        <div class="home-button" id="wsk-background-button">
           <router-link style="text-decoration: none; color: inherit" to="/WSK"
             >Wertschöpfungskette</router-link
           >
         </div>
       </div>
     </div>
-    <div id="news">
+    <div class="news">
       News
       <hr />
     </div>
@@ -95,7 +95,7 @@ export default {
 hr {
   border-top: 1px solid black;
 }
-.flexContainer {
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,8 +103,8 @@ hr {
   margin: 1em;
 }
 
-.wsk,
-.siegel {
+.wsk-background,
+.siegel-background {
   height: 200px;
   width: 100%;
   display: flex;
@@ -115,7 +115,7 @@ hr {
   margin: 1em;
 }
 
-.wsk {
+.wsk-background {
   background-image: url("@/assets/img/plane.jpg");
   height: 200px;
   background-size: cover;
@@ -123,14 +123,14 @@ hr {
   background-position: center;
 }
 
-.siegel {
+.siegel-background {
   background-image: url("@/assets/img/siegel_aufmacher.jpg");
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.buttonHome {
+.home-button {
   position: absolute;
   bottom: -10px;
   text-align: center;
@@ -141,15 +141,15 @@ hr {
   box-shadow: 3px 3px 20px;
 }
 
-#siegelButton {
+#siegel-background-button {
   background-color: #c1a285;
 }
 
-#wskButton {
+#wsk-background-button {
   background-color: #d9ed92;
 }
 
-#news {
+.news {
   font-size: 2em;
 }
 </style>

@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="ueberschriftAnbieter">
-      <div class="titelAnbieter">Anbieter</div>
+    <div class="anbieter-header">
+      <div class="anbieter-header-title">Anbieter</div>
     </div>
     <BackButton />
   </div>
 </template>
 
 <style>
-.ueberschriftAnbieter {
+.anbieter-header {
   height: 300px;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
   background-color: #ecf8e0;
 }
 
-.titelAnbieter {
+.anbieter-header-title {
   background-color: #fff;
   position: absolute;
   bottom: -10px;

@@ -1,24 +1,24 @@
 <template>
   <div>
-    <div class="ueberschriftVerkauf">
-      <div class="titelVerkauf">Verkauf</div>
+    <div class="verkauf-header">
+      <div class="verkauf-header-title">Verkauf</div>
     </div>
     <BackButton />
   </div>
 </template>
 
 <style>
-.ueberschriftVerkauf {
+.verkauf-header {
   height: 300px;
   position: relative;
-  background-color: #bef781;
+  background-color: #d9ef92;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   box-shadow: 3px 3px 20px;
 }
 
-.titelVerkauf {
+.verkauf-header-title {
   position: absolute;
   bottom: -10px;
   background-color: #fff;
