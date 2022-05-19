@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="anbieter-header">
+      <img class="anbieter-header-picture" src="@/assets/svg/cloth.svg" />
       <div class="anbieter-header-title">Anbieter</div>
     </div>
     <BackButton />
@@ -25,6 +26,11 @@
   padding: 1em;
   font-size: 1.5em;
   box-shadow: 3px 3px 20px;
+}
+
+.anbieter-header-picture {
+  position: absolute;
+  top: 50px;
 }
 </style>
 

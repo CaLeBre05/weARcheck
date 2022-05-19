@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="kunde-header">
+      <img class="kunde-header-picture" src="@/assets/svg/bag.svg" />
       <div class="kunde-header-title">Kunde</div>
     </div>
     <BackButton />
@@ -25,6 +26,11 @@
   padding: 1em;
   font-size: 1.5em;
   box-shadow: 3px 3px 20px;
+}
+
+.kunde-header-picture {
+  position: absolute;
+  top: 50px;
 }
 </style>
 

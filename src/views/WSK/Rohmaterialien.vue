@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="rohmaterialien-header">
+      <img class="rohmaterialien-header-picture" src="@/assets/svg/tree.svg" />
       <div class="rohmaterialien-header-title">Rohmaterialien</div>
     </div>
     <BackButton />
@@ -25,6 +26,11 @@
   bottom: -10px;
   background-color: #fff;
   box-shadow: 3px 3px 20px;
+}
+
+.rohmaterialien-header-picture {
+  position: absolute;
+  top: 50px;
 }
 </style>
 

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="verkauf-header">
+      <img class="verkauf-header-picture" src="@/assets/svg/recycle.svg" />
       <div class="verkauf-header-title">Verkauf</div>
     </div>
     <BackButton />
@@ -25,6 +26,11 @@
   padding: 1em;
   font-size: 1.5em;
   box-shadow: 3px 3px 20px;
+}
+
+.verkauf-header-picture {
+  position: absolute;
+  top: 50px;
 }
 </style>
 

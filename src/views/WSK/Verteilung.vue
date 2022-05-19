@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="verteilung-header">
+      <img class="verteilung-header-picture" src="@/assets/svg/car.svg" />
       <div class="verteilung-header-title">Verteilung</div>
     </div>
     <BackButton />
@@ -25,6 +26,11 @@
   padding: 1em;
   font-size: 1.5em;
   box-shadow: 3px 3px 20px;
+}
+
+.verteilung-header-picture {
+  position: absolute;
+  top: 50px;
 }
 </style>
 
