@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="verteilung-header">
-      <img class="verteilung-header-picture" src="@/assets/svg/car.svg" />
+      <img
+        class="verteilung-header-picture"
+        src="@/assets/svg/WSKCliparts/car.svg"
+      />
       <div class="verteilung-header-title">Verteilung</div>
     </div>
     <BackButton />

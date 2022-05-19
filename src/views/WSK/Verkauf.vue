@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="verkauf-header">
-      <img class="verkauf-header-picture" src="@/assets/svg/recycle.svg" />
+      <img
+        class="verkauf-header-picture"
+        src="@/assets/svg/WSKCliparts/recycle.svg"
+      />
       <div class="verkauf-header-title">Verkauf</div>
     </div>
     <BackButton />

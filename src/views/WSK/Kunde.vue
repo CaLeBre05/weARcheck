@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="kunde-header">
-      <img class="kunde-header-picture" src="@/assets/svg/bag.svg" />
+      <img
+        class="kunde-header-picture"
+        src="@/assets/svg/WSKCliparts/bag.svg"
+      />
       <div class="kunde-header-title">Kunde</div>
     </div>
     <BackButton />

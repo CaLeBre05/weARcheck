@@ -3,7 +3,7 @@
     <div class="fabrik-header">
       <img
         class="fabrik-header-picture"
-        src="@/assets/svg/sewing-machine.svg"
+        src="@/assets/svg/WSKCliparts/sewing-machine.svg"
       />
       <div class="fabrik-header-title">Fabrik</div>
     </div>

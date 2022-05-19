@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="anbieter-header">
-      <img class="anbieter-header-picture" src="@/assets/svg/cloth.svg" />
+      <img
+        class="anbieter-header-picture"
+        src="@/assets/svg/WSKCliparts/cloth.svg"
+      />
       <div class="anbieter-header-title">Anbieter</div>
     </div>
     <BackButton />

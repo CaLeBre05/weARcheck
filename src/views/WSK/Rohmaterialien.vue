@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="rohmaterialien-header">
-      <img class="rohmaterialien-header-picture" src="@/assets/svg/tree.svg" />
+      <img
+        class="rohmaterialien-header-picture"
+        src="@/assets/svg/WSKCliparts/tree.svg"
+      />
       <div class="rohmaterialien-header-title">Rohmaterialien</div>
     </div>
     <BackButton />
