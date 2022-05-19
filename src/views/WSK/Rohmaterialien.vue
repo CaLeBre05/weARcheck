@@ -8,10 +8,22 @@
       <div class="rohmaterialien-header-title">Rohmaterialien</div>
     </div>
     <BackButton />
+    <div class="rohmaterialien-content">
+      Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer,
+      ökonomischer und ökologischer Standards, wobei diese bei jedem Siegel
+      anders gestaltet werden. Hinter jedem Nachhaltigkeitskennzeichen steht
+      eine Organisation, die die Siegel vergibt. Ein Nachhaltigkeitssiegel steht
+      für die Einhaltung gewisser sozialer, ökonomischer und ökologischer
+      Standards, wobei diese bei jedem Siegel anders gestaltet werden.
+    </div>
   </div>
 </template>
 
 <style>
+.rohmaterialien-content {
+  margin: 2.5em 1.7em 0 1.7em;
+  font-size: 1.2em;
+}
 .rohmaterialien-header {
   background-color: #f5fbef;
   position: relative;
