@@ -1,272 +1,155 @@
 <template>
-<div>
-    <div class="header">
-      <div id="headline">weAR check</div>
-    </div>
-    <div class="boxes">
-        <div class="boxContent" id="siegelBox"><p id="siegel">Siegel</p></div>
-        <div class="boxContent" id="wskBox"><p id="wsk">Wertschöpfungskette</p></div>
-        <div id="slider">
-   <input type="radio" name="slider" id="slide1" checked>
-   <input type="radio" name="slider" id="slide2">
-   <input type="radio" name="slider" id="slide3">
-   <input type="radio" name="slider" id="slide4">
-   <div id="slides">
-      <div id="overflow">
-         <div class="inner">
-            <div class="slide slide_1">
-               <div class="slide-content">
-                  <h2>Slide 1</h2>
-                  <p></p>
-               </div>
-            </div>
-            <div class="slide slide_2">
-               <div class="slide-content">
-                  <h2>Slide 2</h2>
-                  <p></p>
-               </div>
-            </div>
-            <div class="slide slide_3">
-               <div class="slide-content">
-                  <h2>Slide 3</h2>
-                  <p></p>
-               </div>
-            </div>
-            <div class="slide slide_4">
-               <div class="slide-content">
-                  <h2>Slide 4</h2>
-                  <p></p>
-               </div>
-            </div>
-         </div>
+  <div>
+    <div class="flex-container" id="flex-container">
+      <div class="siegel-background" id="siegel">
+        <div class="home-button" id="siegel-background-button">
+          <router-link
+            class="router"
+            style="text-decoration: none; color: inherit"
+            to="/Siegel"
+            >Siegel</router-link
+          >
+        </div>
       </div>
-   </div>
-   <div id="controls">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
-      <label for="slide4"></label>
-   </div>
-   <div id="bullets">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
-      <label for="slide4"></label>
-   </div>
-</div>
+      <div class="wsk-background" id="wsk">
+        <div class="home-button" id="wsk-background-button">
+          <router-link style="text-decoration: none; color: inherit" to="/WSK"
+            >Wertschöpfungskette</router-link
+          >
+        </div>
+      </div>
     </div>
-</div>
+    <div class="news">
+      News
+      <hr />
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <div class="slideButton" id="firstSlide">
+          Ausbeute trifft oft Frauen
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="slideButton" id="secondSlide">Second Slide</div>
+      </div>
+      <div class="carousel-slide">
+        <div class="slideButton" id="thirdSlide">Third Slide</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "HomeView"
+  name: "HomeView",
 };
 </script>
 
 <style scoped>
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-#headline {
-    font-size: 16px;
-    background-color: #34A0A4;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
+#firstSlide,
+#secondSlide,
+#thirdSlide {
+  background-color: #34a0a4;
+  color: white;
 }
 
-.boxes {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-    align-content: space-between;
+.slideButton {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0.7em;
+  display: inline-block;
+  box-shadow: 3px 3px 20px #000000;
 }
 
-.boxContent {
-    border: 1px solid black;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 2em;
-    border-radius: 10px;
-    font-size: 24px;
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background-image: url("@/assets/img/fast_fashion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
 }
 
-#siegelBox {
-    background-image: url("@/assets/fairtrade-kleidung-siegel-ueberblick.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    position:relative;
-    height: 4em;
+.carousel-container {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  box-shadow: 3px 3px 20px;
+  display: flex;
+  border: 1px solid black;
+  overflow: hidden;
+}
+hr {
+  border-top: 1px solid black;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
 }
 
-#siegel {
-    position: absolute;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
-    background-color: #C1A285;
-    bottom: 0;
-    left: 33%;
-}
-#wskBox {
-    position: relative;
-    background-image: url("@/assets/Airplane.jpg");
-    background-repeat: no-repeat;
-    background-size:100%;
-    height: 4em;
-    background-position: center;
+.wsk-background,
+.siegel-background {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 3px 3px 20px;
+  position: relative;
+  margin: 1em;
 }
 
-#wsk {
-    position: absolute;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
-    background-color: #D9ED92;
-    bottom: 0;
-}
-#slidingWindows {
-    position: absolute;
-    background-color: #34A0A4;
-    bottom: 3em;
+.wsk-background {
+  background-image: url("@/assets/img/plane.jpg");
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#slider {
-   margin: 0 auto;
-   width: 100%;
-   max-width: 100%;
-   text-align: center;
+.siegel-background {
+  background-image: url("@/assets/img/siegel_aufmacher.jpg");
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-#slider input[type=radio] {
-   display: none;
+.home-button {
+  position: absolute;
+  bottom: -10px;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bolder;
+  padding: 0.7em;
+  display: inline-block;
+  box-shadow: 3px 3px 20px;
 }
-#slider label {
-   cursor:pointer;
-   text-decoration: none;
+
+#siegel-background-button {
+  background-color: #c1a285;
 }
-#slides {
-   padding: 10px;
-   background: #fff;
-   position: relative;
-   z-index: 1;
+
+#wsk-background-button {
+  background-color: #d9ed92;
 }
-#overflow {
-   width: 100%;
-   overflow: hidden;
-}
-#slide1:checked ~ #slides .inner {
-   margin-left: 0;
-}
-#slide2:checked ~ #slides .inner {
-   margin-left: -100%;
-}
-#slide3:checked ~ #slides .inner {
-   margin-left: -200%;
-}
-#slide4:checked ~ #slides .inner {
-   margin-left: -300%;
-}
-#slides .inner {
-   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-   width: 400%;
-   line-height: 0;
-   height: 150px;
-}
-#slides .slide {
-   width: 25%;
-   float:left;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-   color: #fff;
-}
-#slides .slide_1 {
-   background: #00171F;
-}
-#slides .slide_2 {
-   background: #003459;
-}
-#slides .slide_3 {
-   background: #007EA7;
-}
-#slides .slide_4 {
-   background: #00A8E8;
-}
-#controls {
-   margin: -180px 0 0 0;
-   width: 100%;
-   height: 50px;
-   z-index: 3;
-   position: relative;
-}
-#controls label {
-   transition: opacity 0.2s ease-out;
-   display: none;
-   width: 50px;
-   height: 50px;
-   opacity: .4;
-}
-#controls label:hover {
-   opacity: 1;
-}
-#slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(3),
-#slide3:checked ~ #controls label:nth-child(4),
-#slide4:checked ~ #controls label:nth-child(1) {
-   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-   float:right;
-   margin: 0 -50px 0 0;
-   display: block;
-}
-#slide1:checked ~ #controls label:nth-last-child(2),
-#slide2:checked ~ #controls label:nth-last-child(3),
-#slide3:checked ~ #controls label:nth-last-child(4),
-#slide4:checked ~ #controls label:nth-last-child(1) {
-   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-   float:left;
-   margin: 0 0 0 -50px;
-   display: block;
-}
-#bullets {
-   margin: 150px 0 0;
-   text-align: center;
-}
-#bullets label {
-   display: inline-block;
-   width: 10px;
-   height: 10px;
-   border-radius:100%;
-   background: #ccc;
-   margin: 0 10px;
-}
-#slide1:checked ~ #bullets label:nth-child(1),
-#slide2:checked ~ #bullets label:nth-child(2),
-#slide3:checked ~ #bullets label:nth-child(3),
-#slide4:checked ~ #bullets label:nth-child(4) {
-   background: #444;
-}
-@media screen and (max-width: 900px) {
-   #slide1:checked ~ #controls label:nth-child(2),
-   #slide2:checked ~ #controls label:nth-child(3),
-   #slide3:checked ~ #controls label:nth-child(4),
-   #slide4:checked ~ #controls label:nth-child(1),
-   #slide1:checked ~ #controls label:nth-last-child(2),
-   #slide2:checked ~ #controls label:nth-last-child(3),
-   #slide3:checked ~ #controls label:nth-last-child(4),
-   #slide4:checked ~ #controls label:nth-last-child(1) {
-      margin: 0;
-   }
-   #slides {
-      max-width: calc(100% - 140px);
-      margin: 0 auto;
-   }
+
+.news {
+  font-size: 2em;
 }
 </style>

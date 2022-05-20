@@ -11,6 +11,7 @@
         ><img src="./assets/img/menu.png" class="img"
       /></router-link>
     </nav>
+  
     <router-view />
   </div>
 </template>
@@ -32,13 +33,11 @@ export default {
   left: 3em;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   font-family: "Nunito", sans-serif;
 }
-
 .navbar {
   position: fixed;
   bottom: 0px;
@@ -50,6 +49,7 @@ export default {
   height: 50px;
   background-color: white;
   border-top-color: black;
+  z-index: 100;
 }
 
 .img {
@@ -74,7 +74,5 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 </style>
 
-<script>
-</script>
 
 
