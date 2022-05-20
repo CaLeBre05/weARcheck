@@ -1,5 +1,5 @@
 <template>
-  <button v-on:click="onClickButton(event)" type="button" class="button">
+  <button v-on:click="onClickButton(event)" type="button" class="button shadow">
     <span class="button__text">
       <slot></slot>
     </span>
@@ -47,7 +47,6 @@ export default {
   font-weight: 500;
   width: 100%;
   font-family: "Nunito", sans-serif;
-  box-shadow: 5px 5px 5px silver;
 }
 
 .button:hover {
@@ -70,7 +69,6 @@ export default {
   float: right;
   width: 25%;
   background: rgba(0, 0, 0, 0.08);
-  box-shadow: 10px 20px 15px silver;
 }
 
 .icon {

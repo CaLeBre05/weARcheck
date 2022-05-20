@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="picture-header">
-      <div class="picture-header-title">Wertschöpfungskette</div>
+    <div class="picture-header shadow">
+      <div class="picture-header-title shadow">Wertschöpfungskette</div>
     </div>
     <BackButton />
     <div class="flexContainerWSK">
@@ -81,7 +81,6 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 3px 3px 20px;
 }
 .picture-header-title {
   position: absolute;
@@ -95,6 +94,5 @@ export default {
   background-color: #d9ed92;
   font-size: 1.7em;
   font-weight: bolder;
-  box-shadow: 3px 3px 20px;
 }
 </style>

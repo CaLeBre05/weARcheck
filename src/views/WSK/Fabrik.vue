@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="fabrik-header">
+    <div class="fabrik-header shadow">
       <img
         class="fabrik-header-picture"
         src="@/assets/svg/WSKCliparts/sewing-machine.svg"
       />
-      <div class="fabrik-header-title">Fabrik</div>
+      <div class="fabrik-header-title shadow">Fabrik</div>
     </div>
     <BackButton />
     <div class="fabrik-content">
@@ -31,7 +31,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
 }
 
 .fabrik-header-title {
@@ -40,7 +39,6 @@
   background-color: #fff;
   padding: 1em;
   font-size: 1.5em;
-  box-shadow: 3px 3px 20px;
 }
 
 .fabrik-header-picture {

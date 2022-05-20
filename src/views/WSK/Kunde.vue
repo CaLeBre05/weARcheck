@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="kunde-header">
+    <div class="kunde-header shadow">
       <img
         class="kunde-header-picture"
         src="@/assets/svg/WSKCliparts/bag.svg"
       />
-      <div class="kunde-header-title">Kunde</div>
+      <div class="kunde-header-title shadow">Kunde</div>
     </div>
     <BackButton />
     <div class="kunde-content">
@@ -31,7 +31,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
 }
 
 .kunde-header-title {
@@ -40,7 +39,6 @@
   background-color: #fff;
   padding: 1em;
   font-size: 1.5em;
-  box-shadow: 3px 3px 20px;
 }
 
 .kunde-header-picture {

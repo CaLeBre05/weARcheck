@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="rohmaterialien-header">
+    <div class="rohmaterialien-header shadow">
       <img
         class="rohmaterialien-header-picture"
         src="@/assets/svg/WSKCliparts/tree.svg"
       />
-      <div class="rohmaterialien-header-title">Rohmaterialien</div>
+      <div class="rohmaterialien-header-title shadow">Rohmaterialien</div>
     </div>
     <BackButton />
     <div class="rohmaterialien-content">
@@ -31,7 +31,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
 }
 
 .rohmaterialien-header-title {
@@ -40,7 +39,6 @@
   position: absolute;
   bottom: -10px;
   background-color: #fff;
-  box-shadow: 3px 3px 20px;
 }
 
 .rohmaterialien-header-picture {

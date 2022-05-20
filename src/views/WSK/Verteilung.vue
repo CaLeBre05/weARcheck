@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="verteilung-header">
+    <div class="verteilung-header shadow">
       <img
         class="verteilung-header-picture"
         src="@/assets/svg/WSKCliparts/car.svg"
       />
-      <div class="verteilung-header-title">Verteilung</div>
+      <div class="verteilung-header-title shadow">Verteilung</div>
     </div>
     <BackButton />
     <div class="verteilung-content">
@@ -32,7 +32,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
 }
 
 .verteilung-header-title {
@@ -41,7 +40,6 @@
   background-color: #fff;
   padding: 1em;
   font-size: 1.5em;
-  box-shadow: 3px 3px 20px;
 }
 
 .verteilung-header-picture {

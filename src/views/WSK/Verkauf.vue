@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="verkauf-header">
+    <div class="verkauf-header shadow">
       <img
         class="verkauf-header-picture"
         src="@/assets/svg/WSKCliparts/recycle.svg"
       />
-      <div class="verkauf-header-title">Verkauf</div>
+      <div class="verkauf-header-title shadow">Verkauf</div>
     </div>
     <BackButton />
     <div class="verkauf-content">
@@ -31,7 +31,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
 }
 
 .verkauf-header-title {
@@ -40,7 +39,6 @@
   background-color: #fff;
   padding: 1em;
   font-size: 1.5em;
-  box-shadow: 3px 3px 20px;
 }
 
 .verkauf-header-picture {
