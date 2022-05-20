@@ -62,7 +62,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 500px;
-  margin: 1em;
+  margin: 1em 1em 3.5em 1em;
   padding-top: 1em;
   padding-left: 0.5em;
   padding-right: 0.5em;

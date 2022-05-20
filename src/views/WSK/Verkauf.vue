@@ -21,7 +21,7 @@
 
 <style>
 .verkauf-content {
-  margin: 2.5em 1.7em 0 1.7em;
+  margin: 2.5em 1.7em 3.5em 1.7em;
   font-size: 1.2em;
 }
 .verkauf-header {
