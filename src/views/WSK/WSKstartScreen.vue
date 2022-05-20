@@ -1,54 +1,63 @@
 <template>
   <div>
+    <!--
     <div class="picture-header">
       <div class="picture-header-title">Wertschöpfungskette</div>
     </div>
+    -->
+    <PageWrapper
+      :color="'#d9ed92'"
+      :headline="'Wertschöpfungskette'"
+      :image="'plane.jpg'"
+      ><div class="flexContainerWSK">
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/WSK/Rohmaterialien"
+          ><Button color="#F5FBEF">Rohmaterialien</Button></router-link
+        >
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/WSK/Anbieter"
+          ><Button color="#ECF8E0">Anbieter</Button></router-link
+        >
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/WSK/Fabrik"
+          ><Button color="#ECF6CE">Fabrik</Button></router-link
+        >
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/WSK/Verteilung"
+        >
+          <Button color="#E1F5A9">Verteilung</Button></router-link
+        >
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/WSK/Verkauf"
+        >
+          <Button color="#d9ef92">Verkauf</Button></router-link
+        >
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/WSK/Kunde"
+        >
+          <Button color="#d9ed92">Kunde</Button></router-link
+        >
+      </div></PageWrapper
+    >
+
     <BackButton />
-    <div class="flexContainerWSK">
-      <router-link
-        style="text-decoration: none; color: inherit"
-        to="/WSK/Rohmaterialien"
-        ><Button color="#F5FBEF">Rohmaterialien</Button></router-link
-      >
-      <router-link
-        style="text-decoration: none; color: inherit"
-        to="/WSK/Anbieter"
-        ><Button color="#ECF8E0">Anbieter</Button></router-link
-      >
-      <router-link
-        style="text-decoration: none; color: inherit"
-        to="/WSK/Fabrik"
-        ><Button color="#ECF6CE">Fabrik</Button></router-link
-      >
-      <router-link
-        style="text-decoration: none; color: inherit"
-        to="/WSK/Verteilung"
-      >
-        <Button color="#E1F5A9">Verteilung</Button></router-link
-      >
-      <router-link
-        style="text-decoration: none; color: inherit"
-        to="/WSK/Verkauf"
-      >
-        <Button color="#d9ef92">Verkauf</Button></router-link
-      >
-      <router-link
-        style="text-decoration: none; color: inherit"
-        to="/WSK/Kunde"
-      >
-        <Button color="#d9ed92">Kunde</Button></router-link
-      >
-    </div>
   </div>
 </template>
 
 <script>
 import BackButton from "@/components/backButton.vue";
 import Button from "@/components/Button.vue";
+import PageWrapper from "@/components/PageWrapper.vue";
 
 export default {
   name: "WSKstartScreen",
-  components: { BackButton, Button },
+  components: { BackButton, Button, PageWrapper },
 };
 </script>
 
