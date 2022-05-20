@@ -9,10 +9,10 @@
   border-radius: 50px;
   border: none;
   background-color: rgba(211, 211, 211, 0.7);
-  position: absolute;
+  position: fixed;
   height: 3em;
   width: 3em;
-  top: 4em;
+  top: 3em;
   left: 2em;
   display: flex;
   justify-content: center;

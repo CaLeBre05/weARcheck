@@ -1,26 +1,30 @@
 <template>
   <div>
-    <div class="picContainerSiegel">
-      <div class="ueberschriftSiegel">Siegel</div>
-    </div>
+    <PageWrapper
+      :headline="'Siegel'"
+      :color="'#c1a285'"
+      :image="'siegel_aufmacher.jpg'"
+    >
+      <div class="flexContainerSiegel">
+        <div class="placeHolder"></div>
+        <div class="placeHolder"></div>
+        <div class="placeHolder"></div>
+        <div class="placeHolder"></div>
+        <div class="placeHolder"></div>
+        <div class="placeHolder"></div>
+      </div>
+    </PageWrapper>
     <BackButton />
-    <div class="flexContainerSiegel">
-      <div class="placeHolder"></div>
-      <div class="placeHolder"></div>
-      <div class="placeHolder"></div>
-      <div class="placeHolder"></div>
-      <div class="placeHolder"></div>
-      <div class="placeHolder"></div>
-    </div>
   </div>
 </template>
 
 <script>
 import BackButton from "@/components/backButton.vue";
+import PageWrapper from "@/components/PageWrapper.vue";
 
 export default {
   name: "siegelstartScreen",
-  components: { BackButton },
+  components: { BackButton, PageWrapper },
 };
 </script>
 
