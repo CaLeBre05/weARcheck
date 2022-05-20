@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="anbieter-header">
+    <div class="anbieter-header shadow">
       <img
         class="anbieter-header-picture"
         src="@/assets/svg/WSKCliparts/cloth.svg"
       />
-      <div class="anbieter-header-title">Anbieter</div>
+      <div class="anbieter-header-title shadow">Anbieter</div>
     </div>
     <BackButton />
     <div class="anbieter-content">
@@ -21,7 +21,7 @@
 
 <style>
 .anbieter-content {
-  margin: 2.5em 1.7em 0 1.7em;
+  margin: 2.5em 1.7em 3.5em 1.7em;
   font-size: 1.2em;
 }
 .anbieter-header {
@@ -29,7 +29,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
   position: relative;
   background-color: #ecf8e0;
 }
@@ -40,7 +39,6 @@
   bottom: -10px;
   padding: 1em;
   font-size: 1.5em;
-  box-shadow: 3px 3px 20px;
 }
 
 .anbieter-header-picture {

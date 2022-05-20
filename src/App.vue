@@ -11,7 +11,7 @@
         ><img src="./assets/img/menu.png" class="img"
       /></router-link>
     </nav>
-  
+
     <router-view />
   </div>
 </template>
@@ -25,7 +25,6 @@ export default {
   components: { BackButton, HomeView },
 };
 </script>
-
 
 <style>
 #bb {
@@ -52,6 +51,10 @@ export default {
   z-index: 100;
 }
 
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 6px;
+}
+
 .img {
   max-width: 70%;
   height: 70%;
@@ -73,6 +76,3 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 </style>
-
-
-

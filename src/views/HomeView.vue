@@ -84,9 +84,7 @@ export default {
 }
 
 .carousel-container {
-  margin-top: 2em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 2em 1em 3.5em 1em;
   box-shadow: 3px 3px 20px;
   display: flex;
   border: 1px solid black;

@@ -1,10 +1,5 @@
 <template>
   <div>
-    <!--
-    <div class="picture-header">
-      <div class="picture-header-title">Wertschöpfungskette</div>
-    </div>
-    -->
     <PageWrapper
       :color="'#d9ed92'"
       :headline="'Wertschöpfungskette'"
@@ -71,7 +66,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 500px;
-  margin: 1em;
+  margin: 1em 1em 3.5em 1em;
   padding-top: 1em;
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -90,7 +85,6 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 3px 3px 20px;
 }
 .picture-header-title {
   position: absolute;
@@ -104,6 +98,5 @@ export default {
   background-color: #d9ed92;
   font-size: 1.7em;
   font-weight: bolder;
-  box-shadow: 3px 3px 20px;
 }
 </style>
