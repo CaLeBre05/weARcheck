@@ -3,16 +3,30 @@
     <flickity class="flickity" ref="flickity" :options="flickityOptions">
       <div class="carousel-cell shadow" id="first">
         <div class="slideButton shadow" id="firstSlide">
-          Ausbeute trifft oft Frauen
+          <router-link
+            style="text-decoration: none; color: inherit"
+            to="/SlidingWindows/Frauen"
+            >Ausbeute trifft oft Frauen</router-link
+          >
         </div>
       </div>
       <div class="carousel-cell shadow" id="second">
         <div class="slideButton shadow" id="secondSlide">
-          Giftige Inhaltsstoffe
+          <router-link
+            style="text-decoration: none; color: inherit"
+            to="/SlidingWindows/GiftigeInhaltsstoffe"
+            >Giftige Inhaltsstoffe</router-link
+          >
         </div>
       </div>
       <div class="carousel-cell shadow" id="third">
-        <div class="slideButton shadow" id="thirdSlide">Fair Fashion</div>
+        <div class="slideButton shadow" id="thirdSlide">
+          <router-link
+            style="text-decoration: none; color: inherit"
+            to="/SlidingWindows/FairFashion"
+            >Fair Fashion</router-link
+          >
+        </div>
       </div>
     </flickity>
   </div>
