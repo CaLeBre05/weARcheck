@@ -23,25 +23,15 @@
       News
       <hr />
     </div>
-    <div class="carousel-container">
-      <div class="carousel-slide">
-        <div class="slideButton" id="firstSlide">
-          Ausbeute trifft oft Frauen
-        </div>
-      </div>
-      <div class="carousel-slide">
-        <div class="slideButton" id="secondSlide">Second Slide</div>
-      </div>
-      <div class="carousel-slide">
-        <div class="slideButton" id="thirdSlide">Third Slide</div>
-      </div>
-    </div>
+    <Carousel />
   </div>
 </template>
 
 <script>
+import Carousel from "@/components/carousel.vue";
 export default {
   name: "HomeView",
+  components: { Carousel },
 };
 </script>
 
@@ -49,47 +39,9 @@ export default {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-#firstSlide,
-#secondSlide,
-#thirdSlide {
-  background-color: #34a0a4;
-  color: white;
-}
-
-.slideButton {
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 0.7em;
-  display: inline-block;
-  box-shadow: 3px 3px 20px #000000;
-}
-
-.carousel-slide {
-  display: flex;
-  width: 100%;
-  height: 250px;
-  background-image: url("@/assets/img/fast_fashion.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.carousel-container {
-  margin: 2em 1em 3.5em 1em;
-  box-shadow: 3px 3px 20px;
-  display: flex;
-  border: 1px solid black;
-  overflow: hidden;
-}
 hr {
   border-top: 1px solid black;
 }
