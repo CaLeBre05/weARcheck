@@ -6,7 +6,7 @@
       :color="'#34a0a4'"
       :textColor="'#FFFFFF'"
       ><div class="flexContainerInhaltsstoffe">
-        <p class="einleitung">
+        <p class="einleitung-Inhaltsstoffe">
           In Textilien und Kleidung stecken oft Schadstoffe wie Chemikalien und
           Allergene, die wir wissentlich nicht an unsere Haut lassen würden. Die
           Gifte gefährden zudem Arbeiter*innen und verseuchen die Abwässer im
@@ -76,7 +76,7 @@ export default {
   padding: 0;
 }
 
-.einleitung {
+.einleitung-Inhaltsstoffe {
   font-size: 18px;
 }
 
@@ -88,8 +88,7 @@ export default {
 .flexContainerInhaltsstoffe {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  margin: 1em 1.5em 3.5em 1.5em;
+  margin: 1em 1.5em 3em 1.5em;
   padding-top: 1em 0.5em 0.5em 0.5em;
 }
 </style>

@@ -16,7 +16,7 @@ details {
 
 summary {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   line-height: 300%;
   margin-left: 0.5em;
