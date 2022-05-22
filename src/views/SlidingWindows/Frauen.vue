@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageWrapper
-      :headline="'Ausbeute betrifft häufig Frauen'"
+      :headline="'Ausbeute trifft oft Frauen'"
       :image="'fast_fashion.jpg'"
       :color="'#34a0a4'"
       :textColor="'#FFFFFF'"
