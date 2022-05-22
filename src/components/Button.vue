@@ -1,5 +1,5 @@
 <template>
-  <button v-on:click="onClickButton(event)" type="button" class="button shadow">
+  <button v-on:click="onClickButton()" type="button" class="button shadow">
     <span class="button__text">
       <slot></slot>
     </span>
@@ -21,8 +21,7 @@ export default {
     color: String,
   },
   methods: {
-    onClickButton(event) {
-      this.$emit("clicked");
+    onClickButton() {
       console.log("Hello world!");
     },
   },
