@@ -20,8 +20,7 @@
       </div>
     </div>
     <div class="news">
-      News
-      <hr />
+      <span>News</span>
     </div>
     <Carousel />
   </div>
@@ -44,6 +43,19 @@ export default {
 
 hr {
   border-top: 1px solid black;
+}
+.news {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 1em 0 0.25em;
+  padding-left: 8%;
+}
+
+.news span {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 26px;
 }
 .flex-container {
   display: flex;
