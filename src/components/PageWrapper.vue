@@ -9,6 +9,7 @@
           color
             ? { 'background-color': color }
             : { 'background-color': 'white' },
+          textColor ? { color: textColor } : { color: 'black' },
         ]"
       >
         {{ headline }}
@@ -25,6 +26,7 @@ export default {
     color: String,
     headline: String,
     image: String,
+    textColor: String,
   },
   data() {
     return {
@@ -55,12 +57,12 @@ export default {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 .spacer {
-  height: 11.6em;
+  height: 11.2em;
 }
 .headline {
   text-align: center;
-  font-size: 1.2em;
-  padding: 0.7em;
+  font-size: 1.625em;
+  padding: 0.5em;
   display: inline-block;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
   display: block;

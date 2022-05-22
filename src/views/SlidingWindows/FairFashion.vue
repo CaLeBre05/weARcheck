@@ -4,6 +4,7 @@
       :headline="'Fair Fashion'"
       :image="'Second_Hand_Kleidung.jpg'"
       :color="'#34a0a4'"
+      :textColor="'#FFFFFF'"
       ><div class="flexContainerFairFashion"></div
     ></PageWrapper>
 

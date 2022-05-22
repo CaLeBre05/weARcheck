@@ -4,6 +4,7 @@
       :headline="'Ausbeute betrifft häufig Frauen'"
       :image="'fast_fashion.jpg'"
       :color="'#34a0a4'"
+      :textColor="'#FFFFFF'"
       ><div class="flexContainerFrauen"></div
     ></PageWrapper>
 

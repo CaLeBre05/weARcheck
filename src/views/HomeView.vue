@@ -5,7 +5,7 @@
         <div class="home-button" id="siegel-background-button">
           <router-link
             class="router"
-            style="text-decoration: none; color: inherit"
+            style="text-decoration: none; color: black"
             to="/Siegel"
             >Siegel</router-link
           >
@@ -13,7 +13,7 @@
       </div>
       <div class="wsk-background" id="wsk">
         <div class="home-button" id="wsk-background-button">
-          <router-link style="text-decoration: none; color: inherit" to="/WSK"
+          <router-link style="text-decoration: none; color: black" to="/WSK"
             >Wertschöpfungskette</router-link
           >
         </div>
@@ -82,11 +82,10 @@ hr {
 }
 .home-button {
   position: absolute;
-  bottom: -10px;
+  bottom: -12px;
   text-align: center;
-  font-size: 1.6em;
-  font-weight: bolder;
-  padding: 0.7em;
+  font-size: 1.625em;
+  padding: 0.5em;
   display: inline-block;
   box-shadow: 3px 3px 20px;
 }

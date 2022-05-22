@@ -111,4 +111,19 @@ export default {
   position: relative;
   margin: 2em 0.5em 3.5em 0.5em;
 }
+.carousel-cell.is-selected {
+  -webkit-animation: moveUp 1s forwards;
+  animation: moveUp 0.5s forwards;
+}
+@-webkit-keyframes moveUp {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+
+  to {
+    left: 0px;
+    top: -0.75em;
+  }
+}
 </style>

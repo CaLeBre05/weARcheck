@@ -4,6 +4,7 @@
       :headline="'Giftige Inhaltsstoffe'"
       :image="'schadstoffe_kleidung.jpg'"
       :color="'#34a0a4'"
+      :textColor="'#FFFFFF'"
       ><div class="flexContainerInhaltsstoffe"></div
     ></PageWrapper>
 
