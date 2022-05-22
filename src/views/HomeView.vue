@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="flex-container" id="flex-container">
-      <div class="siegel-background" id="siegel">
-        <div class="home-button" id="siegel-background-button">
+      <div class="siegel-background shadow" id="siegel">
+        <div class="home-button shadow" id="siegel-background-button">
           <router-link
             class="router"
             style="text-decoration: none; color: black"
@@ -11,8 +11,8 @@
           >
         </div>
       </div>
-      <div class="wsk-background" id="wsk">
-        <div class="home-button" id="wsk-background-button">
+      <div class="wsk-background shadow" id="wsk">
+        <div class="home-button shadow" id="wsk-background-button">
           <router-link style="text-decoration: none; color: black" to="/WSK"
             >Wertschöpfungskette</router-link
           >
@@ -72,7 +72,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
   position: relative;
   margin: 1em;
 }
@@ -99,7 +98,6 @@ hr {
   font-size: 1.625em;
   padding: 0.5em;
   display: inline-block;
-  box-shadow: 3px 3px 20px;
 }
 
 #siegel-background-button {
