@@ -25,8 +25,12 @@
 </template>
 
 <script>
+import Button from "../components/Button.vue";
 export default {
-    name: "HomeView"
+    name: "HomeView",
+     components: {
+    Button,
+  },
 };
 </script>
 

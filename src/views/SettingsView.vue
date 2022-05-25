@@ -1,12 +1,16 @@
 <template>
-    <div>Settings</div>
+    <Button :button__image="'home.png'">
+Arbeitsbedingungenen
+    </Button>
 </template>
 
 <script>
+import Button from "../components/Button.vue";
 export default {
     name: "SettingsView",
-    components: {
-    },
+     components: {
+    Button,
+  },
 };
 </script>
 
