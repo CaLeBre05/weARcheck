@@ -17,9 +17,10 @@
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid;
-  margin: 1em;
-  padding: 1em;
+  margin: 0;
+  padding: 2em;
   height: 800px;
+  background-color: lightgray;
 }
 
 .settingsHeader {
@@ -27,11 +28,13 @@
   padding: 0.5em;
   font-size: 2em;
   font-weight: bold;
+  background-color: #fff;
 }
 .settingsElement {
-  height: 200px;
+  height: 150px;
   text-align: center;
   border: 1px solid;
+  background-color: #fff;
 }
 </style>
 <script>
