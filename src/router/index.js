@@ -102,6 +102,39 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/WSK/Kunde.vue"),
   },
+  {
+    path: "/SlidingWindows/Frauen",
+    name: "Frauen",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/SlidingWindows/Frauen.vue"
+      ),
+  },
+  {
+    path: "/SlidingWindows/GiftigeInhaltsstoffe",
+    name: "Giftige Inhaltsstoffe",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/SlidingWindows/GiftigeInhaltsstoffe.vue"
+      ),
+  },
+  {
+    path: "/SlidingWindows/FairFashion",
+    name: "FairFashion",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/SlidingWindows/FairFashion.vue"
+      ),
+  },
 ];
 
 const router = new VueRouter({

@@ -1,47 +1,36 @@
 <template>
   <div>
     <div class="flex-container" id="flex-container">
-      <div class="siegel-background" id="siegel">
-        <div class="home-button" id="siegel-background-button">
+      <div class="siegel-background shadow" id="siegel">
+        <div class="home-button shadow" id="siegel-background-button">
           <router-link
             class="router"
-            style="text-decoration: none; color: inherit"
+            style="text-decoration: none; color: black"
             to="/Siegel"
             >Siegel</router-link
           >
         </div>
       </div>
-      <div class="wsk-background" id="wsk">
-        <div class="home-button" id="wsk-background-button">
-          <router-link style="text-decoration: none; color: inherit" to="/WSK"
+      <div class="wsk-background shadow" id="wsk">
+        <div class="home-button shadow" id="wsk-background-button">
+          <router-link style="text-decoration: none; color: black" to="/WSK"
             >Wertschöpfungskette</router-link
           >
         </div>
       </div>
     </div>
     <div class="news">
-      News
-      <hr />
+      <span>News</span>
     </div>
-    <div class="carousel-container">
-      <div class="carousel-slide">
-        <div class="slideButton" id="firstSlide">
-          Ausbeute trifft oft Frauen
-        </div>
-      </div>
-      <div class="carousel-slide">
-        <div class="slideButton" id="secondSlide">Second Slide</div>
-      </div>
-      <div class="carousel-slide">
-        <div class="slideButton" id="thirdSlide">Third Slide</div>
-      </div>
-    </div>
+    <Carousel />
   </div>
 </template>
 
 <script>
+import Carousel from "@/components/carousel.vue";
 export default {
   name: "HomeView",
+  components: { Carousel },
 };
 </script>
 
@@ -49,51 +38,24 @@ export default {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-#firstSlide,
-#secondSlide,
-#thirdSlide {
-  background-color: #34a0a4;
-  color: white;
-}
-
-.slideButton {
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 0.7em;
-  display: inline-block;
-  box-shadow: 3px 3px 20px #000000;
-}
-
-.carousel-slide {
-  display: flex;
-  width: 100%;
-  height: 250px;
-  background-image: url("@/assets/img/fast_fashion.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.carousel-container {
-  margin-top: 2em;
-  margin-left: 1em;
-  margin-right: 1em;
-  box-shadow: 3px 3px 20px;
-  display: flex;
-  border: 1px solid black;
-  overflow: hidden;
-}
 hr {
   border-top: 1px solid black;
+}
+.news {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 1em 0 0.25em;
+  padding-left: 8%;
+}
+
+.news span {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 26px;
 }
 .flex-container {
   display: flex;
@@ -110,7 +72,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  box-shadow: 3px 3px 20px;
   position: relative;
   margin: 1em;
 }
@@ -132,13 +93,11 @@ hr {
 }
 .home-button {
   position: absolute;
-  bottom: -10px;
+  bottom: -12px;
   text-align: center;
-  font-size: 1.6em;
-  font-weight: bolder;
-  padding: 0.7em;
+  font-size: 1.625em;
+  padding: 0.5em;
   display: inline-block;
-  box-shadow: 3px 3px 20px;
 }
 
 #siegel-background-button {
