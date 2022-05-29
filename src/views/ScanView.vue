@@ -2,7 +2,13 @@
   <div>
     <div class="fullscreen">
       <!--<BarcodeScanner @stopped="scanStopped = true"></BarcodeScanner>-->
-      <AR3></AR3>
+      <!--<AR4></AR4>-->
+      <router-link
+        class="router"
+        style="text-decoration: none; color: red"
+        :to="{ name: 'ARView', params: { _id: '123' } }"
+        >ARView</router-link
+      >
     </div>
   </div>
 </template>
@@ -13,6 +19,7 @@ import AR from "../components/AR.vue";
 import HelloWorld from "../components/HelloWorld.vue";
 import AR2 from "@/components/AR2.vue";
 import AR3 from "@/components/AR3.vue";
+import AR4 from "@/components/AR4.vue";
 
 export default {
   name: "ScanView",
@@ -22,6 +29,7 @@ export default {
     HelloWorld,
     AR2,
     AR3,
+    AR4,
   },
   data() {
     return {
@@ -45,7 +53,6 @@ export default {
   bottom: 50px;
   left: 0;
   right: 0;
-  background-color: black;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
