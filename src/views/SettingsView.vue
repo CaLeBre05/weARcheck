@@ -27,19 +27,19 @@
       <div class="settingsElement shadow" id="element2">
         <div class="settingSummary">Informationen</div>
         <hr />
-        <div class="setting">Deine Scans</div>
+        <div class="setting">Deine Scans<span id="span3">></span></div>
         <hr />
-        <div class="setting">Tutorial</div>
+        <div class="setting">Tutorial<span id="span4">></span></div>
         <hr />
       </div>
       <div class="settingsElement shadow" id="element3">
         <div class="settingSummary">Über weAR check</div>
         <hr />
-        <div class="setting">Impressum</div>
+        <div class="setting">Impressum<span id="span5">></span></div>
         <hr />
-        <div class="setting">Nutzungsbedingungen</div>
+        <div class="setting">Nutzungsbedingungen<span id="span6">></span></div>
         <hr />
-        <div class="setting">Datenschutz</div>
+        <div class="setting">Datenschutz<span id="span7">></span></div>
         <hr />
       </div>
     </div>
@@ -48,7 +48,12 @@
 
 <style>
 #span1,
-#span2 {
+#span2,
+#span3,
+#span4,
+#span5,
+#span6,
+#span7 {
   float: right;
 }
 .switch {
