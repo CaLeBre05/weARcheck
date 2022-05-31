@@ -128,7 +128,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em 2em 4em 2em;
+  padding: 1.5em 1em 4em 1em;
   background-color: lightgray;
   height: 100vh;
 }
