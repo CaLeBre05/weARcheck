@@ -1,21 +1,18 @@
 <template>
   <div>
     <div class="flex-container" id="flex-container">
-      <div class="siegel-background shadow" id="siegel">
+      <div
+        class="siegel-background shadow"
+        id="siegel"
+        @click="navigate($event)"
+      >
         <div class="home-button shadow" id="siegel-background-button">
-          <router-link
-            class="router"
-            style="text-decoration: none; color: black"
-            to="/Siegel"
-            >Siegel</router-link
-          >
+          Siegel
         </div>
       </div>
-      <div class="wsk-background shadow" id="wsk">
+      <div class="wsk-background shadow" id="wsk" @click="navigate($event)">
         <div class="home-button shadow" id="wsk-background-button">
-          <router-link style="text-decoration: none; color: black" to="/WSK"
-            >Wertschöpfungskette</router-link
-          >
+          Wertschöpfungskette
         </div>
       </div>
     </div>
@@ -31,6 +28,12 @@ import Carousel from "@/components/carousel.vue";
 export default {
   name: "HomeView",
   components: { Carousel },
+  methods: {
+    navigate(event) {
+      var path = event.target.id;
+      this.$router.push("/" + path);
+    },
+  },
 };
 </script>
 
