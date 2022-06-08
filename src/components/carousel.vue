@@ -1,31 +1,61 @@
 <template>
   <div>
     <flickity class="flickity" ref="flickity" :options="flickityOptions">
-      <div class="carousel-cell shadow" id="first">
-        <div class="slideButton shadow" id="firstSlide">
-          <router-link
-            style="text-decoration: none; color: inherit"
-            to="/SlidingWindows/Frauen"
-            >Ausbeute trifft oft Frauen</router-link
-          >
+      <div
+        class="carousel-cell shadow"
+        id="Frauen"
+        @click="navigate($event)"
+        style="
+          background-image: url('@/assets/img/fast_fashion.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+      >
+        <div
+          class="slideButton shadow"
+          id="Frauen"
+          style="background-color: #34a0a4; color: white"
+        >
+          Ausbeute trifft oft Frauen
         </div>
       </div>
-      <div class="carousel-cell shadow" id="second">
-        <div class="slideButton shadow" id="secondSlide">
-          <router-link
-            style="text-decoration: none; color: inherit"
-            to="/SlidingWindows/GiftigeInhaltsstoffe"
-            >Giftige Inhaltsstoffe</router-link
-          >
+      <div
+        class="carousel-cell shadow"
+        id="GiftigeInhaltsstoffe"
+        @click="navigate($event)"
+        style="
+          background-image: url('@/assets/img/schadstoffe_kleidung.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+      >
+        <div
+          class="slideButton shadow"
+          id="GiftigeInhaltsstoffe"
+          style="background-color: #34a0a4; color: white"
+        >
+          Giftige Inhaltsstoffe
         </div>
       </div>
-      <div class="carousel-cell shadow" id="third">
-        <div class="slideButton shadow" id="thirdSlide">
-          <router-link
-            style="text-decoration: none; color: inherit"
-            to="/SlidingWindows/FairFashion"
-            >Fair Fashion</router-link
-          >
+      <div
+        class="carousel-cell shadow"
+        id="FairFashion"
+        @click="navigate($event)"
+        style="
+          background-image: url('@/assets/img/Second_Hand_Kleidung.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+      >
+        <div
+          class="slideButton shadow"
+          id="FairFashion"
+          style="background-color: #34a0a4; color: white"
+        >
+          Fair Fashion
         </div>
       </div>
     </flickity>
@@ -53,6 +83,12 @@ export default {
         // any options from Flickity can be used
       },
     };
+  },
+  methods: {
+    navigate(event) {
+      var path = event.target.id;
+      this.$router.push("/SlidingWindows/" + path);
+    },
   },
 };
 </script>
