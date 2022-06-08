@@ -128,14 +128,15 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.5em 1em 4em 1em;
+  padding: 1.5em 1em 1.5em 1em;
+  margin-bottom: 2em;
   background-color: lightgray;
-  height: 100vh;
 }
 
 .settingsHeader {
   text-align: center;
   padding: 0.5em;
+  margin-bottom: 0.5em;
   font-size: 2em;
   background-color: #fff;
 }
@@ -146,6 +147,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
+  margin-bottom: 1em;
   border-radius: 5px;
 }
 </style>
