@@ -6,12 +6,20 @@
         id="siegel"
         @click="navigate($event)"
       >
-        <div class="home-button shadow" id="siegel-background-button">
+        <div
+          class="home-button shadow"
+          id="siegel"
+          style="background-color: #c1a285"
+        >
           Siegel
         </div>
       </div>
       <div class="wsk-background shadow" id="wsk" @click="navigate($event)">
-        <div class="home-button shadow" id="wsk-background-button">
+        <div
+          class="home-button shadow"
+          id="wsk"
+          style="background-color: #d9ed92"
+        >
           Wertschöpfungskette
         </div>
       </div>
@@ -101,14 +109,6 @@ hr {
   font-size: 1.625em;
   padding: 0.5em;
   display: inline-block;
-}
-
-#siegel-background-button {
-  background-color: #c1a285;
-}
-
-#wsk-background-button {
-  background-color: #d9ed92;
 }
 
 .news {
