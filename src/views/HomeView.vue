@@ -4,7 +4,7 @@
       <div
         class="siegel-background shadow"
         id="siegel"
-        @click="navigate($event)"
+        @click="navigate('siegel')"
       >
         <div
           class="home-button shadow"
@@ -14,7 +14,7 @@
           Siegel
         </div>
       </div>
-      <div class="wsk-background shadow" id="wsk" @click="navigate($event)">
+      <div class="wsk-background shadow" id="wsk" @click="navigate('wsk')">
         <div
           class="home-button shadow"
           id="wsk"
@@ -37,8 +37,7 @@ export default {
   name: "HomeView",
   components: { Carousel },
   methods: {
-    navigate(event) {
-      var path = event.target.id;
+    navigate(path) {
       this.$router.push("/" + path);
     },
   },

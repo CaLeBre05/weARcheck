@@ -120,7 +120,7 @@ hr {
   font-size: 1.2em;
 }
 .settingSummary {
-  font-size: 1.7em;
+  font-size: 26px;
   margin: 0.5em;
 }
 
