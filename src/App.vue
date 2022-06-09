@@ -11,7 +11,7 @@
         ><img src="./assets/img/menu.png" class="img"
       /></router-link>
     </nav>
-  
+
     <router-view />
   </div>
 </template>
@@ -26,7 +26,6 @@ export default {
 };
 </script>
 
-
 <style>
 #bb {
   top: 3em;
@@ -38,7 +37,6 @@ export default {
   color: #2c3e50;
   font-family: "Nunito", sans-serif;
 }
-
 .navbar {
   position: fixed;
   bottom: 0px;
@@ -51,6 +49,10 @@ export default {
   background-color: white;
   border-top-color: black;
   z-index: 100;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 6px;
 }
 
 .img {
@@ -74,8 +76,3 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 </style>
-
-<script>
-</script>
-
-

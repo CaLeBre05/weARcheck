@@ -1,10 +1,5 @@
 <template>
-  <button v-on:click="onClickButton(event)" type="button" class="button">
-    <span
-      v-if="button__image"
-      class="button__image"
-      :style="backgroundImage"
-    ></span>
+  <button v-on:click="onClickButton()" type="button" class="button shadow">
     <span class="button__text">
       <slot></slot>
     </span>
@@ -36,24 +31,19 @@ export default {
     };
   },
   methods: {
-    onClickButton(event) {
-      this.$emit("clicked");
+    onClickButton() {
       console.log("Hello world!");
-    },
-    getImgUrl() {
-      return "'@/assets/img/" + this.image + "'";
     },
   },
 };
 </script>
-
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 .button {
   display: inline-block;
-  height: 45px;
+  height: 60px;
   padding: 0;
   background: #f8f8f6;
   border: 1px solid rgb(170, 167, 167);
@@ -61,13 +51,11 @@ export default {
   border-radius: 1px;
   overflow: hidden;
   text-align: left;
-  padding-left: 10px;
-  font-size: 18px;
+  padding-left: 5px;
+  font-size: 24px;
   font-weight: 500;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
   font-family: "Nunito", sans-serif;
-  box-shadow: 5px 5px 5px silver;
 }
 
 .button:hover {
@@ -99,7 +87,6 @@ export default {
   float: right;
   width: 45px;
   background: rgba(0, 0, 0, 0.08);
-  box-shadow: 10px 20px 15px silver;
 }
 
 .button__image {
@@ -118,4 +105,3 @@ export default {
   height: 50%;
 }
 </style>
-  
