@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar">
+    <nav class="navbar" v-if="!$route.meta.hideNavbar">
       <router-link to="/" class="link"
         ><img src="./assets/img/home.png" class="img"
       /></router-link>
