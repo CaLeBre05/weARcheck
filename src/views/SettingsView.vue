@@ -165,7 +165,7 @@ hr {
   text-align: center;
   padding: 0.5em;
   margin-bottom: 0.5em;
-  font-size: 2em;
+  font-size: 26px;
   background-color: #fff;
 }
 .settingsElement {
