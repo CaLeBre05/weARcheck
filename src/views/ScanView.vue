@@ -4,7 +4,12 @@
     <img
       src="../assets/svg/switch-camera.svg"
       class="change-camera-btn"
-      v-if="this.isActive && !this.showCard"
+      v-if="
+        this.isActive &&
+        !this.showCard &&
+        this.cameras &&
+        this.cameras.length > 1
+      "
       @click="changeCamera()"
     />
     <div id="result" class="success" v-if="this.showCard && this.result">
