@@ -6,6 +6,7 @@
 
 <style scoped>
 .backButton {
+  z-index: 100;
   border-radius: 50px;
   border: none;
   background-color: rgba(211, 211, 211, 0.7);

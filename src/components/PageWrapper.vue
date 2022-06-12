@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="image" :style="backgroundImageLink">
+    <div class="image" :style="backgroundProps">
       <div class="spacer"></div>
       <div
         v-if="headline"
@@ -27,25 +27,27 @@ export default {
     headline: String,
     image: String,
     textColor: String,
+    backgroundColor: String,
   },
   data() {
+    let type = this.image.slice(-3) === "svg" ? "svg" : "img";
+    let backgroundCol = this.backgroundColor ? this.backgroundColor : "#ffffff";
     return {
-      backgroundImageLink: {
-        backgroundImage: `url(${require("@/assets/img/" + this.image)})`,
+      backgroundProps: {
+        backgroundImage: `url(${require("@/assets/" +
+          type +
+          "/" +
+          this.image)})`,
+        backgroundColor: backgroundCol,
       },
     };
-  },
-  computed: {},
-  methods: {
-    getImgUrl() {
-      return "'@/assets/img/" + this.image + "'";
-    },
   },
 };
 </script>
 
 <style scoped>
 .image {
+  z-index: 1;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
