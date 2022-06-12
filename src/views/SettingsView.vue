@@ -8,38 +8,57 @@
         <div class="settingSummary">Benachrichtigungen</div>
         <hr />
         <div class="setting">
-          Push Benachrichtigungen<span id="span1"
-            ><label class="switch">
+          <div>Push Benachrichtigungen</div>
+          <div>
+            <label class="switch">
               <input type="checkbox" />
-              <span class="slider round"></span> </label
-          ></span>
+              <span class="slider round"></span>
+            </label>
+          </div>
         </div>
         <hr />
         <div class="setting">
-          E-Mail Benachrichtigungen<span id="span2"
-            ><label class="switch">
+          <div>E-Mail Benachrichtigungen</div>
+          <div>
+            <label class="switch">
               <input type="checkbox" />
-              <span class="slider round"></span> </label
-          ></span>
+              <span class="slider round"></span>
+            </label>
+          </div>
         </div>
         <hr />
       </div>
       <div class="settingsElement shadow" id="element2">
         <div class="settingSummary">Informationen</div>
         <hr />
-        <div class="setting">Deine Scans<span id="span3">></span></div>
+        <div class="setting">
+          <div>Deine Scans</div>
+          <div>></div>
+        </div>
         <hr />
-        <div class="setting">Tutorial<span id="span4">></span></div>
+        <div class="setting">
+          <div>Tutorial</div>
+          <div>></div>
+        </div>
         <hr />
       </div>
       <div class="settingsElement shadow" id="element3">
         <div class="settingSummary">Über weAR check</div>
         <hr />
-        <div class="setting">Impressum<span id="span5">></span></div>
+        <div class="setting">
+          <div>Impressum</div>
+          <div>></div>
+        </div>
         <hr />
-        <div class="setting">Nutzungsbedingungen<span id="span6">></span></div>
+        <div class="setting">
+          <div>Nutzungsbedingungen</div>
+          <div>></div>
+        </div>
         <hr />
-        <div class="setting">Datenschutz<span id="span7">></span></div>
+        <div class="setting">
+          <div>Datenschutz</div>
+          <div>></div>
+        </div>
         <hr />
       </div>
     </div>
@@ -47,15 +66,6 @@
 </template>
 
 <style>
-#span1,
-#span2,
-#span3,
-#span4,
-#span5,
-#span6,
-#span7 {
-  float: right;
-}
 .switch {
   position: relative;
   display: inline-block;
@@ -118,6 +128,8 @@ hr {
 .setting {
   margin: 0.7em;
   font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
 }
 .settingSummary {
   font-size: 26px;
