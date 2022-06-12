@@ -1,6 +1,10 @@
 <template>
   <div>
-    <button @click="requestAR()" :disabled="!arSupported && sessionStarted">
+    <button
+      @click="requestAR()"
+      :disabled="!arSupported"
+      v-if="!sessionStarted"
+    >
       AR starten
     </button>
     <div
@@ -23,14 +27,13 @@ export default {
   data: function () {
     const arSupported = false;
     const sessionStarted = false;
-    var xrSession;
-    var gl;
-    var xrSession;
-    var renderer;
-    var scene;
-    var camera;
-    var localReferenceSpace;
-    var viewerSpace;
+    let gl;
+    let xrSession;
+    let renderer;
+    let scene;
+    let camera;
+    let localReferenceSpace;
+    let viewerSpace;
     const stabilized = false;
     const material = new THREE.MeshStandardMaterial({
       side: THREE.FrontSide,
@@ -75,6 +78,7 @@ export default {
     },
 
     async requestAR() {
+      console.log("session started?:", this.sessionStarted);
       console.log("request AR Session");
       this.xrSession = await navigator.xr.requestSession("immersive-ar", {
         requiredFeatures: ["hit-test", "dom-overlay"],
@@ -88,7 +92,7 @@ export default {
 
     createXRCanvas() {
       console.log("create Canvas");
-      var canvas = this.$refs.canvas;
+      let canvas = this.$refs.canvas;
       this.gl = canvas.getContext("webgl", { xrCompatible: true });
       this.xrSession.updateRenderState({
         baseLayer: new XRWebGLLayer(this.xrSession, this.gl),
@@ -131,8 +135,6 @@ export default {
       this.scene.add(shadowMesh);
       this.scene.add(light);
       this.scene.add(directionalLight);
-      //this.reticle = new Reticle();
-      //this.scene.add(this.reticle);
 
       this.camera = new THREE.PerspectiveCamera();
       this.camera.matrixAutoUpdate = false;
@@ -160,26 +162,6 @@ export default {
         this.camera.matrix.fromArray(view.transform.matrix);
         this.camera.projectionMatrix.fromArray(view.projectionMatrix);
         this.camera.updateMatrixWorld(true);
-        /*
-        const hitTestResults = frame.getHitTestResults(this.hitTestSource);
-
-        if (!this.stabilized && hitTestResults.length > 0) {
-          this.stabilized = true;
-          //document.body.classList.add("stabilized");
-        }
-        if (hitTestResults.length > 0) {
-          const hitPose = hitTestResults[0].getPose(this.localReferenceSpace);
-
-          // Update the reticle position
-          this.reticle.visible = true;
-          this.reticle.position.set(
-            hitPose.transform.position.x,
-            hitPose.transform.position.y,
-            hitPose.transform.position.z
-          );
-          this.reticle.updateMatrixWorld(true);
-        }
-        */
         this.renderer.render(this.scene, this.camera);
       }
     },
