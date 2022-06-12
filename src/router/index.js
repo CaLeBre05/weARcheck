@@ -23,7 +23,7 @@ const routes = [
       import("../views/SettingsView.vue"),
   },
   {
-    path: "/WSK",
+    path: "/wsk",
     name: "WSKstartScreen",
     component: () =>
       import("../views/WSK/WSKstartScreen.vue"),
