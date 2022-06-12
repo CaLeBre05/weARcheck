@@ -33,12 +33,16 @@
         <hr />
         <div class="setting">
           <div>Deine Scans</div>
-          <div>></div>
+          <div class="settingsArrow">
+            <img src="../assets/svg/forward.svg" />
+          </div>
         </div>
         <hr />
         <div class="setting">
           <div>Tutorial</div>
-          <div>></div>
+          <div class="settingsArrow">
+            <img src="../assets/svg/forward.svg" />
+          </div>
         </div>
         <hr />
       </div>
@@ -47,17 +51,23 @@
         <hr />
         <div class="setting">
           <div>Impressum</div>
-          <div>></div>
+          <div class="settingsArrow">
+            <img src="../assets/svg/forward.svg" />
+          </div>
         </div>
         <hr />
         <div class="setting">
           <div>Nutzungsbedingungen</div>
-          <div>></div>
+          <div class="settingsArrow">
+            <img src="../assets/svg/forward.svg" />
+          </div>
         </div>
         <hr />
         <div class="setting">
           <div>Datenschutz</div>
-          <div>></div>
+          <div class="settingsArrow">
+            <img src="../assets/svg/forward.svg" />
+          </div>
         </div>
         <hr />
       </div>
@@ -66,6 +76,12 @@
 </template>
 
 <style>
+.settingsArrow {
+  padding-top: 3px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
 .switch {
   position: relative;
   display: inline-block;
