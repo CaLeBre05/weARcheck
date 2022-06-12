@@ -29,7 +29,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/SettingsView.vue"),
   },
   {
-    path: "/WSK",
+    path: "/wsk",
     name: "WSKstartScreen",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
