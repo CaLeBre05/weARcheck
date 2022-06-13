@@ -31,14 +31,14 @@
       <div class="settingsElement shadow" id="element2">
         <div class="settingSummary">Informationen</div>
         <hr />
-        <div class="setting">
+        <div class="setting" @click="navigate('DeineScans')">
           <div>Deine Scans</div>
           <div class="settingsArrow">
             <img src="../assets/svg/forward.svg" />
           </div>
         </div>
         <hr />
-        <div class="setting">
+        <div class="setting" @click="navigate('Tutorial')">
           <div>Tutorial</div>
           <div class="settingsArrow">
             <img src="../assets/svg/forward.svg" />
@@ -185,6 +185,11 @@ export default {
   name: "SettingsView",
   components: {
     BackButton,
+  },
+  methods: {
+    navigate(path) {
+      this.$router.push("/Settings/" + path);
+    },
   },
 };
 </script>

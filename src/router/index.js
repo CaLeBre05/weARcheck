@@ -135,6 +135,26 @@ const routes = [
         /* webpackChunkName: "about" */ "../views/SlidingWindows/FairFashion.vue"
       ),
   },
+  {
+    path: "/Settings/DeineScans",
+    name: "DeineScans",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Settings/DeineScans.vue"
+      ),
+  },
+  {
+    path: "/Settings/Tutorial",
+    name: "Tutorial",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Settings/Tutorial.vue"),
+  },
 ];
 
 const router = new VueRouter({
