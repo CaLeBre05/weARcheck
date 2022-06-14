@@ -58,7 +58,7 @@ export default {
   },
   mounted() {
     window.addEventListener("resize", this.resize);
-
+    console.log("showCard", this.showCard);
     this.html5QrCode = new Html5Qrcode("reader");
 
     Html5Qrcode.getCameras()
@@ -84,13 +84,15 @@ export default {
       this.timeout = setTimeout(this.restartScan, 50);
     },
     restartScan() {
-      if (this.isActive === true) {
-        this.html5QrCode.stop().then(() => {
-          this.isActive = false;
+      if (this.cameras && this.cameras.length > 0) {
+        if (this.isActive === true) {
+          this.html5QrCode.stop().then(() => {
+            this.isActive = false;
+            this.startScan();
+          });
+        } else {
           this.startScan();
-        });
-      } else {
-        this.startScan();
+        }
       }
     },
     startScan() {

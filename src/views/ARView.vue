@@ -1,8 +1,5 @@
 <template>
   <div>
-    <button @click="requestAR()" :disabled="!arSupported && sessionStarted">
-      AR starten
-    </button>
     <div
       v-if="typeof arSupported == undefined || arSupported === null"
       class="card"
@@ -11,6 +8,16 @@
     </div>
     <div v-if="!arSupported" class="card">your browser doesn't support AR</div>
     <canvas v-show="sessionStarted" ref="canvas"></canvas>
+    <div class="button-wrapper">
+      <button class="shadow">
+        <img src="../assets/img/heart_outlined.png" class="icon" />
+        <div>merken</div>
+      </button>
+      <button class="shadow" @click="routeToScanView()">
+        <img src="../assets/img/scan.png" class="icon" />
+        <div>neuer Scan</div>
+      </button>
+    </div>
   </div>
 </template>
 
@@ -49,10 +56,15 @@ export default {
   created: function () {},
   mounted: function () {
     console.log("The id is: " + this.$route.params._id);
-    this.isArSupported();
+    this.startAR();
+  },
+  async unmounted() {
+    if (this.xrSession) {
+      await this.xrSession.end();
+    }
   },
   methods: {
-    isArSupported() {
+    async startAR() {
       const isArSessionSupported =
         navigator.xr &&
         navigator.xr.isSessionSupported &&
@@ -60,6 +72,16 @@ export default {
       if (isArSessionSupported) {
         console.log("AR supported");
         this.arSupported = true;
+
+        console.log("request AR Session");
+        this.xrSession = await navigator.xr.requestSession("immersive-ar", {
+          requiredFeatures: ["hit-test", "dom-overlay"],
+          domOverlay: { root: document.body },
+        });
+        this.sessionStarted = true;
+        this.createXRCanvas();
+
+        await this.onSessionStarted();
         return true;
       } else {
         console.log("AR not supported");
@@ -67,19 +89,6 @@ export default {
         return false;
       }
     },
-
-    async requestAR() {
-      console.log("request AR Session");
-      this.xrSession = await navigator.xr.requestSession("immersive-ar", {
-        requiredFeatures: ["hit-test", "dom-overlay"],
-        domOverlay: { root: document.body },
-      });
-      this.sessionStarted = true;
-      this.createXRCanvas();
-
-      await this.onSessionStarted();
-    },
-
     createXRCanvas() {
       console.log("create Canvas");
       var canvas = this.$refs.canvas;
@@ -177,6 +186,16 @@ export default {
         this.renderer.render(this.scene, this.camera);
       }
     },
+    async endSession() {
+      if (this.xrSession) {
+      }
+    },
+    async routeToScanView() {
+      await await this.xrSession
+        .end()
+        .catch((e) => console.log(e))
+        .then(() => this.$router.push("/scan"));
+    },
   },
   computed: {},
 };
@@ -195,5 +214,29 @@ canvas {
   text-align: center;
   background-color: #34a0a4;
   color: white;
+}
+.button-wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+button {
+  z-index: 1;
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: none;
+  margin: 0.5em;
+  font-family: "Nunito", sans-serif;
+  background: white;
+  font-size: 1.125em;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  height: 20px;
+  padding-right: 5px;
 }
 </style>
