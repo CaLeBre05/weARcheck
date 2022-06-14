@@ -9,18 +9,21 @@
     </div>
     <BackButton />
     <div class="verkauf-content">
-      Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer,
-      ökonomischer und ökologischer Standards, wobei diese bei jedem Siegel
-      anders gestaltet werden. Hinter jedem Nachhaltigkeitskennzeichen steht
-      eine Organisation, die die Siegel vergibt. Ein Nachhaltigkeitssiegel steht
-      für die Einhaltung gewisser sozialer, ökonomischer und ökologischer
-      Standards, wobei diese bei jedem Siegel anders gestaltet werden.
+      Die Entsorgung der gebrauchten Kleidung findet auf unterschiedliche Art
+      und Weise statt. Jährlich werden 500 Millionen Tonnen Textilmüll entsorgt.
+      87% der entsorgten Kleidung werden entweder verbrannt oder auf
+      Mülldeponien gebracht. Nur rund 13% der aussortierten Kleidung werden
+      recycelt oder durch als Secondhandkleidung wiederverwendet. Beim Recycling
+      von Textilien werden die Rohstoffe zurückgewonnen. Gebrauchte Textilien
+      werden zu Putzlappen und Dämmstoffen weiterverarbeitet und enden damit
+      nicht als Müll in der Umwelt.
     </div>
   </div>
 </template>
 
 <style>
 .verkauf-content {
+  text-align: justify;
   margin: 2.5em 1.7em 3.5em 1.7em;
   font-size: 1.2em;
 }

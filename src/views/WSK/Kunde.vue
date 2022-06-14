@@ -9,12 +9,15 @@
     </div>
     <BackButton />
     <div class="kunde-content">
-      Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer,
-      ökonomischer und ökologischer Standards, wobei diese bei jedem Siegel
-      anders gestaltet werden. Hinter jedem Nachhaltigkeitskennzeichen steht
-      eine Organisation, die die Siegel vergibt. Ein Nachhaltigkeitssiegel steht
-      für die Einhaltung gewisser sozialer, ökonomischer und ökologischer
-      Standards, wobei diese bei jedem Siegel anders gestaltet werden.
+      Nach dem Kauf eines Textilproduktes ist der Kunde ein wichtiger Punkt der
+      Wertschöpfungskette. Beim Endverbraucher angekommen wird die Lebensdauer
+      eines Produktes von mehreren Umweltfaktoren beeinflusst. Die Anzahl und
+      Dauer des Gebrauchs sind hierbei die einflussreichsten Faktoren. Fakten
+      zum Gebrauch:<br />• 60% der Treibhausemissionen kommen vom Waschen,
+      Trocknen und Bügeln.<br />• Pro Person entsteht jährlich 77g Mikroplastik
+      beim Waschen.<br />• Durchschnittlich kauft jeder Deutsche 60 neue
+      Textilprodukte pro Jahr. 40% der Kleidung werden gar nicht oder nur selten
+      getragen.
     </div>
   </div>
 </template>
@@ -23,6 +26,7 @@
 .kunde-content {
   margin: 2.5em 1.7em 3.5em 1.7em;
   font-size: 1.2em;
+  text-align: justify;
 }
 .kunde-header {
   height: 300px;
