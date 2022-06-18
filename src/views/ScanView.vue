@@ -52,13 +52,10 @@ export default {
     };
   },
   destroyed() {
-    if (this.isActive) {
-      this.html5QrCode.stop();
-    }
+    this.html5QrCode.stop();
   },
   mounted() {
     window.addEventListener("resize", this.resize);
-    console.log("showCard", this.showCard);
     this.html5QrCode = new Html5Qrcode("reader");
 
     Html5Qrcode.getCameras()
