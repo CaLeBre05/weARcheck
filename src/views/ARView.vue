@@ -9,9 +9,17 @@
     <div v-if="!arSupported" class="card">your browser doesn't support AR</div>
     <canvas v-show="sessionStarted" ref="canvas"></canvas>
     <div class="button-wrapper">
-      <button class="shadow">
-        <img src="../assets/img/heart_outlined.png" class="icon" />
-        <div>merken</div>
+      <button class="shadow" @click="favoured = !favoured">
+        <img
+          :src="
+            favoured
+              ? require('../assets/img/heart_filled.png')
+              : require('../assets/img/heart_outlined.png')
+          "
+          class="icon"
+        />
+        <div v-if="!favoured">merken</div>
+        <div v-else>gemerkt</div>
       </button>
       <button class="shadow" @click="routeToScanView()">
         <img src="../assets/img/scan.png" class="icon" />
@@ -28,8 +36,8 @@ import * as THREE from "three";
 export default {
   name: "ARView",
   data: function () {
-    const arSupported = false;
     const sessionStarted = false;
+    var arSupported;
     var xrSession;
     var gl;
     var xrSession;
@@ -39,6 +47,7 @@ export default {
     var localReferenceSpace;
     var viewerSpace;
     const stabilized = false;
+    var favoured = false;
     return {
       arSupported: arSupported,
       sessionStarted: sessionStarted,
@@ -51,6 +60,7 @@ export default {
       localReferenceSpace: localReferenceSpace,
       viewerSpace: viewerSpace,
       stabilized: stabilized,
+      favoured: favoured,
     };
   },
   created: function () {},
