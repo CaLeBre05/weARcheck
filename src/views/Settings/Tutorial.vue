@@ -3,19 +3,30 @@
     <div class="tutorialContainer">
       <div class="tutorialFlexContainer" id="tutorialFlexContainer">
         <div class="tutorialHeader shadow" id="header">Tutorial</div>
-        <div class="tutorialVideo"></div>
+
+        <video id="video1" preload playsinline loop controls>
+          <source src="#" type="video/mp4" />
+        </video>
+
         <div class="tutorialSummary shadow">
           <b>Herzlich Willkommen zu weAR check!</b><br /><br />
           Mithilfe des Tutorials können Sie alle Funktionen der weAR check App
           finden.
         </div>
+        <BackButton />
       </div>
-      <BackButton />
     </div>
   </div>
 </template>
 
 <style>
+#videoDiv video {
+  position: absolute;
+  width: auto;
+  height: 288px;
+  min-width: 100%;
+  min-height: 100%;
+}
 .tutorialSummary {
   text-align: center;
   background-color: #fff;
@@ -24,15 +35,10 @@
   border-radius: 5px;
 }
 
-.tutorialVideo {
-  height: 200px;
-  border: 1px solid;
-  margin-top: 2em;
-}
 .tutorialHeader {
   text-align: center;
   padding: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   font-size: 26px;
   background-color: #fff;
 }
@@ -47,7 +53,7 @@
 .tutorialContainer {
   margin-bottom: 2em;
   background-color: lightgray;
-  height: 800px;
+  height: 850px;
 }
 </style>
 
