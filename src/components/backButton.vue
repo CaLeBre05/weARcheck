@@ -9,7 +9,7 @@
   z-index: 100;
   border-radius: 50px;
   border: none;
-  background-color: rgba(211, 211, 211, 0.7);
+  background-color: rgba(255, 255, 255, 0.75);
   position: fixed;
   height: 3em;
   width: 3em;
