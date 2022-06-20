@@ -7,36 +7,36 @@
       ><div class="flexContainerWSK">
         <router-link
           style="text-decoration: none; color: inherit"
-          to="/WSK/Rohmaterialien"
-          ><Button color="#F5FBEF">Rohmaterialien</Button></router-link
+          to="/WSK/Rohstofferzeugung"
+          ><Button color="#F5FBEF">Rohstofferzeugung</Button></router-link
         >
         <router-link
           style="text-decoration: none; color: inherit"
-          to="/WSK/Anbieter"
-          ><Button color="#ECF8E0">Anbieter</Button></router-link
+          to="/WSK/Herstellung"
+          ><Button color="#ECF8E0">Herstellung</Button></router-link
         >
         <router-link
           style="text-decoration: none; color: inherit"
-          to="/WSK/Fabrik"
-          ><Button color="#ECF6CE">Fabrik</Button></router-link
+          to="/WSK/Distribution"
+          ><Button color="#ECF6CE">Distribution</Button></router-link
         >
         <router-link
           style="text-decoration: none; color: inherit"
-          to="/WSK/Verteilung"
+          to="/WSK/Handel"
         >
-          <Button color="#E1F5A9">Verteilung</Button></router-link
-        >
-        <router-link
-          style="text-decoration: none; color: inherit"
-          to="/WSK/Verkauf"
-        >
-          <Button color="#d9ef92">Verkauf</Button></router-link
+          <Button color="#E1F5A9">Handel</Button></router-link
         >
         <router-link
           style="text-decoration: none; color: inherit"
-          to="/WSK/Kunde"
+          to="/WSK/Gebrauch"
         >
-          <Button color="#d9ed92">Kunde</Button></router-link
+          <Button color="#d9ef92">Gebrauch</Button></router-link
+        >
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/WSK/Entsorgung"
+        >
+          <Button color="#d9ed92">Entsorgung</Button></router-link
         >
       </div></PageWrapper
     >

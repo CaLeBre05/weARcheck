@@ -22,6 +22,7 @@ summary {
   margin-left: 0.5em;
   padding-left: 5px;
   padding-right: 5px;
+  overflow: hidden;
 }
 
 summary::marker {
@@ -43,6 +44,7 @@ summary::after {
   transform: translate(30px, 10px) rotate(90deg);
 }
 
+
 details[open] summary::after {
   transform: translate(0px, 9px) rotate(270deg);
 }
@@ -54,5 +56,9 @@ details p {
   font-size: 16px;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+summary::after > *{
+  width: 100px;
 }
 </style>

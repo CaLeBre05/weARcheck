@@ -5,16 +5,20 @@
         class="fabrik-header-picture"
         src="@/assets/svg/WSKCliparts/sewing-machine.svg"
       />
-      <div class="fabrik-header-title shadow">Fabrik</div>
+      <div class="fabrik-header-title shadow">Herstellung</div>
     </div>
     <BackButton />
     <div class="fabrik-content">
-      Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer,
-      ökonomischer und ökologischer Standards, wobei diese bei jedem Siegel
-      anders gestaltet werden. Hinter jedem Nachhaltigkeitskennzeichen steht
-      eine Organisation, die die Siegel vergibt. Ein Nachhaltigkeitssiegel steht
-      für die Einhaltung gewisser sozialer, ökonomischer und ökologischer
-      Standards, wobei diese bei jedem Siegel anders gestaltet werden.
+      Die Herstellung von Textilien verteilt sich auf mehrere Prozesse. Zu
+      Beginn wird das Rohmaterial entkörnt. Hierbei werden die Fasern, Samen und
+      Verunreinigungen von Garn industriell getrennt. In der Spinnerei wird im
+      Anschluss das Garn produziert, mit welchem im nächsten Schritt, in der
+      Weberei und Strickerei, Web- und Strickstoffe hergestellt werden.
+      Fortlaufend werden die Web- und Strickstoffe veredelt. Als
+      Veredelungsprozesse gelten Färben, Drucken und Ausrüsten. Am Ende der
+      Herstellung fällt der Prozesse der Konfektionierung an. Unter
+      Konfektionierung fallen unteranderem das Zuschneiden, Nähen und Verpacken
+      der fertigen Textilen.
     </div>
   </div>
 </template>

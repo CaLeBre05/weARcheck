@@ -5,16 +5,21 @@
         class="verkauf-header-picture"
         src="@/assets/svg/WSKCliparts/recycle.svg"
       />
-      <div class="verkauf-header-title shadow">Verkauf</div>
+      <div class="verkauf-header-title shadow">Handel</div>
     </div>
     <BackButton />
     <div class="verkauf-content">
-      Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer,
-      ökonomischer und ökologischer Standards, wobei diese bei jedem Siegel
-      anders gestaltet werden. Hinter jedem Nachhaltigkeitskennzeichen steht
-      eine Organisation, die die Siegel vergibt. Ein Nachhaltigkeitssiegel steht
-      für die Einhaltung gewisser sozialer, ökonomischer und ökologischer
-      Standards, wobei diese bei jedem Siegel anders gestaltet werden.
+      Der Textilhandel ergibt sich aus dem Onlinehandel und den Einzelhandel.
+      Während des Online-Einkaufserlebnis praktisch und zeitsparend von fast
+      überall möglich ist, ist jedoch ein gravierender Verbrauch an
+      Kohlenstoffdioxid ersichtlich. Aufgrund des hohen Prozentsatzes an
+      Retoure-Sendung im Onlinehandel – immerhin über 70 % der Versendeten
+      Kleidung - zurückgesendet werden, beläuft sich der CO2-Ausstoß des
+      Onlinehandels und des damit verbundenen Warenversand auf rund 166 000
+      Tonnen.<br /><br />
+      Deutlich umweltschonender ist die persönliche Beratung in einem Store vor
+      Ort. Durch die Möglichkeit die Kleidung direkt anzuprobieren verringert
+      sich der CO2- Ausstoß um ein Vielfaches.
     </div>
   </div>
 </template>

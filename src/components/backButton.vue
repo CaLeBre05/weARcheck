@@ -1,6 +1,6 @@
 <template>
   <button type="submit" class="backButton" @click="goBack()">
-    <img src="../assets/svg/back-arrow.svg" />
+    <img class="backButton" src="../assets/svg/back-arrow.svg" />
   </button>
 </template>
 
@@ -17,6 +17,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.backbutton{
+  font-size: 13.3333px;
 }
 </style>
 

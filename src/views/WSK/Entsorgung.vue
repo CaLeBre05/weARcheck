@@ -3,18 +3,20 @@
     <div class="kunde-header shadow">
       <img
         class="kunde-header-picture"
-        src="@/assets/svg/WSKCliparts/bag.svg"
+        src="@/assets/svg/WSKCliparts/trash.png"
       />
-      <div class="kunde-header-title shadow">Kunde</div>
+      <div class="kunde-header-title shadow">Entsorgung</div>
     </div>
     <BackButton />
     <div class="kunde-content">
-      Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer,
-      ökonomischer und ökologischer Standards, wobei diese bei jedem Siegel
-      anders gestaltet werden. Hinter jedem Nachhaltigkeitskennzeichen steht
-      eine Organisation, die die Siegel vergibt. Ein Nachhaltigkeitssiegel steht
-      für die Einhaltung gewisser sozialer, ökonomischer und ökologischer
-      Standards, wobei diese bei jedem Siegel anders gestaltet werden.
+      Die Entsorgung der gebrauchten Kleidung findet auf unterschiedliche Art
+      und Weise statt. Jährlich werden 500 Millionen Tonnen Textilmüll entsorgt.
+      87% der entsorgten Kleidung werden entweder verbrannt oder auf
+      Mülldeponien gebracht. Nur rund 13% der aussortierten Kleidung werden
+      recycelt oder durch als Secondhandkleidung wiederverwendet.<br /><br />
+      Beim Recycling von Textilien werden die Rohstoffe zurückgewonnen.
+      Gebrauchte Textilien werden zu Putzlappen und Dämmstoffen
+      weiterverarbeitet und enden damit nicht als Müll in der Umwelt.
     </div>
   </div>
 </template>
@@ -44,6 +46,7 @@
 .kunde-header-picture {
   position: absolute;
   top: 50px;
+  width: 164px;
 }
 </style>
 
