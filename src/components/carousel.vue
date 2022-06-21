@@ -1,31 +1,39 @@
 <template>
   <div>
     <flickity class="flickity" ref="flickity" :options="flickityOptions">
-      <div class="carousel-cell shadow" id="first">
-        <div class="slideButton shadow" id="firstSlide">
-          <router-link
-            style="text-decoration: none; color: inherit"
-            to="/SlidingWindows/Frauen"
-            >Ausbeute trifft oft Frauen</router-link
-          >
+      <div class="carousel-cell shadow" id="Frauen" @click="navigate('Frauen')">
+        <div
+          class="slideButton shadow"
+          id="FrauenTitle"
+          style="background-color: #34a0a4; color: white"
+        >
+          Ausbeute trifft oft Frauen
         </div>
       </div>
-      <div class="carousel-cell shadow" id="second">
-        <div class="slideButton shadow" id="secondSlide">
-          <router-link
-            style="text-decoration: none; color: inherit"
-            to="/SlidingWindows/GiftigeInhaltsstoffe"
-            >Giftige Inhaltsstoffe</router-link
-          >
+      <div
+        class="carousel-cell shadow"
+        id="GiftigeInhaltsstoffe"
+        @click="navigate('GiftigeInhaltsstoffe')"
+      >
+        <div
+          class="slideButton shadow"
+          id="GiftigeInhaltsstoffeTitle"
+          style="background-color: #34a0a4; color: white"
+        >
+          Giftige Inhaltsstoffe
         </div>
       </div>
-      <div class="carousel-cell shadow" id="third">
-        <div class="slideButton shadow" id="thirdSlide">
-          <router-link
-            style="text-decoration: none; color: inherit"
-            to="/SlidingWindows/FairFashion"
-            >Fair Fashion</router-link
-          >
+      <div
+        class="carousel-cell shadow"
+        id="FairFashion"
+        @click="navigate('FairFashion')"
+      >
+        <div
+          class="slideButton shadow"
+          id="FairFashionTitle"
+          style="background-color: #34a0a4; color: white"
+        >
+          Fair Fashion
         </div>
       </div>
     </flickity>
@@ -54,6 +62,11 @@ export default {
       },
     };
   },
+  methods: {
+    navigate(path) {
+      this.$router.push("/SlidingWindows/" + path);
+    },
+  },
 };
 </script>
 
@@ -64,21 +77,21 @@ export default {
   box-sizing: border-box;
 }
 
-#first {
+#Frauen {
   background-image: url("@/assets/img/fast_fashion.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#second {
+#GiftigeInhaltsstoffe {
   background-image: url("@/assets/img/schadstoffe_kleidung.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#third {
+#FairFashion {
   background-image: url("@/assets/img/Second_Hand_Kleidung.jpg");
   background-size: cover;
   background-repeat: no-repeat;

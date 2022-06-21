@@ -13,40 +13,26 @@ const routes = [
   {
     path: "/scan",
     name: "scan",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ScanView.vue"),
+      import("../views/ScanView.vue"),
   },
   {
     path: "/settings",
     name: "settings",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/SettingsView.vue"),
+      import("../views/SettingsView.vue"),
   },
   {
-    path: "/WSK",
+    path: "/wsk",
     name: "WSKstartScreen",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/WSK/WSKstartScreen.vue"),
+      import("../views/WSK/WSKstartScreen.vue"),
   },
   {
     path: "/siegel",
     name: "siegelstartScreen",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(
-        /* webpackChunkName: "about" */ "../views/Siegel/siegelstartScreen.vue"
-      ),
+      import("../views/Siegel/siegelstartScreen.vue"),
   },
   {
     path: "/WSK/Rohstofferzeugung",
@@ -105,35 +91,37 @@ const routes = [
   {
     path: "/SlidingWindows/Frauen",
     name: "Frauen",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/SlidingWindows/Frauen.vue"
+        "../views/SlidingWindows/Frauen.vue"
       ),
   },
   {
     path: "/SlidingWindows/GiftigeInhaltsstoffe",
     name: "Giftige Inhaltsstoffe",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/SlidingWindows/GiftigeInhaltsstoffe.vue"
+        "../views/SlidingWindows/GiftigeInhaltsstoffe.vue"
       ),
   },
   {
     path: "/SlidingWindows/FairFashion",
     name: "FairFashion",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/SlidingWindows/FairFashion.vue"
+        "../views/SlidingWindows/FairFashion.vue"
       ),
+  },
+  {
+    path: "/ARView",
+    name: "ARView",
+    component: () =>
+      import(
+        "../views/ARView.vue"
+      ),
+    meta: {
+      hideNavbar: true,
+    },
   },
   {
     path: "/Siegel/FairTrade",

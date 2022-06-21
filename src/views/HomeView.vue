@@ -1,21 +1,26 @@
 <template>
   <div>
     <div class="flex-container" id="flex-container">
-      <div class="siegel-background shadow" id="siegel">
-        <div class="home-button shadow" id="siegel-background-button">
-          <router-link
-            class="router"
-            style="text-decoration: none; color: black"
-            to="/Siegel"
-            >Siegel</router-link
-          >
+      <div
+        class="siegel-background shadow"
+        id="siegel"
+        @click="navigate('siegel')"
+      >
+        <div
+          class="home-button shadow"
+          id="siegel"
+          style="background-color: #c1a285"
+        >
+          Siegel
         </div>
       </div>
-      <div class="wsk-background shadow" id="wsk">
-        <div class="home-button shadow" id="wsk-background-button">
-          <router-link style="text-decoration: none; color: black" to="/WSK"
-            >Wertschöpfungskette</router-link
-          >
+      <div class="wsk-background shadow" id="wsk" @click="navigate('wsk')">
+        <div
+          class="home-button shadow"
+          id="wsk"
+          style="background-color: #d9ed92"
+        >
+          Wertschöpfungskette
         </div>
       </div>
     </div>
@@ -31,6 +36,11 @@ import Carousel from "@/components/carousel.vue";
 export default {
   name: "HomeView",
   components: { Carousel },
+  methods: {
+    navigate(path) {
+      this.$router.push("/" + path);
+    },
+  },
 };
 </script>
 
@@ -98,14 +108,6 @@ hr {
   font-size: 1.625em;
   padding: 0.5em;
   display: inline-block;
-}
-
-#siegel-background-button {
-  background-color: #c1a285;
-}
-
-#wsk-background-button {
-  background-color: #d9ed92;
 }
 
 .news {
