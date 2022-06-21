@@ -1,5 +1,5 @@
 <template>
-  <button v-on:click="onClickButton(event)" type="button" class="button shadow">
+  <button v-on:click="onClickButton()" type="button" class="button shadow">
     <span
       v-if="button__image"
       class="button__image"
