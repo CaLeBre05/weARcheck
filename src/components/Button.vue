@@ -35,9 +35,8 @@ export default {
     };
   },
   methods: {
-    onClickButton(event) {
+    onClickButton() {
       this.$emit("clicked");
-      console.log("Hello world!");
     },
     getImgUrl() {
       return "'@/assets/img/" + this.image + "'";
