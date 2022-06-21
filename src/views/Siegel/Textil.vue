@@ -5,19 +5,18 @@
       :image="'textile.png'"
       :color="'#fff'"
       :textColor="'#000000'"
-      ><div class="flexContainer-Textil">
-        <h2 class="headerTextil">Textil</h2>
-        <p class="einleitung-Textil">
-          Das Fairtrade-Textile-Production-Siegel auf die gesamte
-          Textilproduktion. Hierbei wird auch die vollständige Textillieferkette
-          mit dem Fairtrade-Textilstandard anerkannt. <br /><br />
-          Der Textilstandard und das Textilprogramm sind ein umfassender Ansatz
-          zur Stärkung von Arbeiterinnen und Arbeitern und zur Verbesserung von
-          Löhnen und Arbeitsbedingungen in der Textilindustrie. Gemeinsam mit
-          dem Fairtradestandard für Baumwolle erreicht Fairtrade so jeden
-          Schritt der Textillieferkette.
-        </p>
-      </div>
+    >
+      <h2 class="headerTextil">Textil</h2>
+      <p class="einleitung-Textil">
+        Das Fairtrade-Textile-Production-Siegel auf die gesamte
+        Textilproduktion. Hierbei wird auch die vollständige Textillieferkette
+        mit dem Fairtrade-Textilstandard anerkannt. <br /><br />
+        Der Textilstandard und das Textilprogramm sind ein umfassender Ansatz
+        zur Stärkung von Arbeiterinnen und Arbeitern und zur Verbesserung von
+        Löhnen und Arbeitsbedingungen in der Textilindustrie. Gemeinsam mit dem
+        Fairtradestandard für Baumwolle erreicht Fairtrade so jeden Schritt der
+        Textillieferkette.
+      </p>
     </PageWrapper>
 
     <BackButton />
@@ -46,15 +45,8 @@ export default {
 }
 
 .einleitung-Textil {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 15px;
   margin-right: 15px;
-}
-
-.flexContainer-Textil {
-  display: flex;
-  flex-direction: column;
-  margin: 1em 1.5em 3em 1.5em;
-  padding-top: 1em 0.5em 0.5em 0.5em;
 }
 </style>

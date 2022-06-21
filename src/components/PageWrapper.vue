@@ -23,6 +23,7 @@
 export default {
   name: "Header",
   props: {
+    backgroundSize: String,
     color: String,
     headline: String,
     image: String,
@@ -31,14 +32,16 @@ export default {
   },
   data() {
     let type = this.image.slice(-3) === "svg" ? "svg" : "img";
-    let backgroundCol = this.backgroundColor ? this.backgroundColor : "#ffffff";
+    let bColor = this.backgroundColor ? this.backgroundColor : "#ffffff";
+    let bSize = this.backgroundSize ? this.backgroundSize : "cover";
     return {
       backgroundProps: {
         backgroundImage: `url(${require("@/assets/" +
           type +
           "/" +
           this.image)})`,
-        backgroundColor: backgroundCol,
+        backgroundColor: bColor,
+        backgroundSize: bSize,
       },
     };
   },
@@ -51,11 +54,14 @@ export default {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   position: sticky;
   top: -140px;
   height: 14em;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+.cover {
+  background-size: cover;
 }
 .spacer {
   height: 11.2em;
@@ -73,6 +79,7 @@ export default {
 }
 .content {
   height: 100%;
-  padding: 20px 0 50px 0;
+  padding: 30px 0 70px 0;
+  margin: 0 5%;
 }
 </style>

@@ -5,35 +5,41 @@
       :color="'#c1a285'"
       :image="'siegel_aufmacher.jpg'"
     >
-      <div class="flexContainerSiegel">
-        <h2 class="headerSiegel">Allgemeine Informationen
-        </h2>
-         <p class="einleitung">
-           Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer, ökonomischer und
-           ökologischer Standarts, wobei diese bei jedem Siegel ander gestaltet werden. Hinter jedem 
-           Nachhaltigkeitskennzeichen steht eine Organisation, die die Siegel vergibt.
-        </p>
-           <router-link
+      <h2 class="headerSiegel">Allgemeine Informationen</h2>
+      <p class="einleitung">
+        Ein Nachhaltigkeitssiegel steht für die Einhaltung gewisser sozialer,
+        ökonomischer und ökologischer Standarts, wobei diese bei jedem Siegel
+        ander gestaltet werden. Hinter jedem Nachhaltigkeitskennzeichen steht
+        eine Organisation, die die Siegel vergibt.
+      </p>
+      <router-link
         style="text-decoration: none; color: inherit"
         to="/Siegel/FairTrade"
-        ><Button button__image="FairTrade.png" color="#f6f1ed">Fair Trade Siegel</Button></router-link
+        ><Button button__image="FairTrade.png" color="#f6f1ed"
+          >Fair Trade Siegel</Button
+        ></router-link
       >
-        <router-link
+      <router-link
         style="text-decoration: none; color: inherit"
         to="/Siegel/GOTS"
-        ><Button button__image="GOTS.png" color="#e0d6c3">GOTS Siegel</Button></router-link
+        ><Button button__image="GOTS.png" color="#e0d6c3"
+          >GOTS Siegel</Button
+        ></router-link
       >
-        <router-link
+      <router-link
         style="text-decoration: none; color: inherit"
         to="/Siegel/FWF"
-        ><Button button__image="FWF.png" color="#d6c2af">Fair Wear Siegel</Button></router-link
+        ><Button button__image="FWF.png" color="#d6c2af"
+          >Fair Wear Siegel</Button
+        ></router-link
       >
-        <router-link
+      <router-link
         style="text-decoration: none; color: inherit"
         to="/Siegel/GrünerKnopf"
-        ><Button button__image="GrünerKnopf.png" color="#bca086">Grüner Knopf Siegel</Button></router-link
+        ><Button button__image="GrünerKnopf.png" color="#bca086"
+          >Grüner Knopf Siegel</Button
+        ></router-link
       >
-      </div>
     </PageWrapper>
     <BackButton />
   </div>
@@ -43,7 +49,6 @@
 import BackButton from "@/components/backButton.vue";
 import Button from "@/components/Button.vue";
 import PageWrapper from "@/components/PageWrapper.vue";
-
 
 export default {
   name: "siegelstartScreen",
@@ -57,13 +62,14 @@ export default {
   padding: 0;
 }
 
-.flexContainerSiegel {
-  display: flex;
-  flex-direction: column;
-  height:550px;
-  margin: 1em 1em 3em 1em;
-  padding: 0.5em;
-  justify-content: space-between;
+.headerSiegel {
+  margin-bottom: 16px;
+}
+
+.einleitung {
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .picContainerSiegel {

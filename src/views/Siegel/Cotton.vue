@@ -5,16 +5,15 @@
       :image="'cotton.png'"
       :color="'#fff'"
       :textColor="'#000000'"
-      ><div class="flexContainer-Cotton">
-        <h2 class="headerCotton">Baumwoll-Siegel</h2>
-        <p class="einleitung-Cotton">
-          Das Fairtrade-Produkt-Siegel für Baumwolle steht für fair angebaute
-          und gehandelte Rohbaumwolle, die über alle Produktionsschritte direkt
-          rückverfolgbar ist und getrennt von Nicht-Fairtrade-Baumwolle
-          weiterverarbeitet wird. Die Baumwolle in Textilien, die dieses Siegel
-          tragen, ist zu 100 Prozent Fairtrade-zertifiziert.
-        </p>
-      </div>
+    >
+      <h2 class="headerCotton">Baumwoll-Siegel</h2>
+      <p class="einleitung-Cotton">
+        Das Fairtrade-Produkt-Siegel für Baumwolle steht für fair angebaute und
+        gehandelte Rohbaumwolle, die über alle Produktionsschritte direkt
+        rückverfolgbar ist und getrennt von Nicht-Fairtrade-Baumwolle
+        weiterverarbeitet wird. Die Baumwolle in Textilien, die dieses Siegel
+        tragen, ist zu 100 Prozent Fairtrade-zertifiziert.
+      </p>
     </PageWrapper>
 
     <BackButton />
@@ -43,15 +42,8 @@ export default {
 }
 
 .einleitung-Cotton {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 15px;
   margin-right: 15px;
-}
-
-.flexContainer-Cotton {
-  display: flex;
-  flex-direction: column;
-  margin: 1em 1.5em 3em 1.5em;
-  padding-top: 1em 0.5em 0.5em 0.5em;
 }
 </style>
