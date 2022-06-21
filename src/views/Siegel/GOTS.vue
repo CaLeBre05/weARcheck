@@ -98,7 +98,7 @@ export default {
 }
 
 .einleitung-GOTS {
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 15px;
   margin-right: 15px;
 }
