@@ -50,4 +50,8 @@ details p {
   margin-bottom: 0;
   margin-top: 0;
 }
+
+summary::after > * {
+  width: 100px;
+}
 </style>

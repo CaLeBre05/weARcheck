@@ -35,40 +35,58 @@ const routes = [
       import("../views/Siegel/siegelstartScreen.vue"),
   },
   {
-    path: "/WSK/Rohmaterialien",
-    name: "Rohmaterialien",
+    path: "/WSK/Rohstofferzeugung",
+    name: "Rohstofferzeugung",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import("../views/WSK/Rohmaterialien.vue"),
+      import(/* webpackChunkName: "about" */ "../views/WSK/Rohstofferzeugung.vue"),
   },
   {
-    path: "/WSK/Anbieter",
-    name: "Anbieter",
+    path: "/WSK/Gebrauch",
+    name: "Gebrauch",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import("../views/WSK/Anbieter.vue"),
+      import(/* webpackChunkName: "about" */ "../views/WSK/Gebrauch.vue"),
   },
   {
-    path: "/WSK/Fabrik",
-    name: "Fabrik",
+    path: "/WSK/Herstellung",
+    name: "Herstellung",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import("../views/WSK/Fabrik.vue"),
+      import(/* webpackChunkName: "about" */ "../views/WSK/Herstellung.vue"),
   },
   {
-    path: "/WSK/Verteilung",
-    name: "Verteilung",
+    path: "/WSK/Distribution",
+    name: "Distribution",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import("../views/WSK/Verteilung.vue"),
+      import(/* webpackChunkName: "about" */ "../views/WSK/Distribution.vue"),
   },
   {
-    path: "/WSK/Verkauf",
-    name: "Verkauf",
+    path: "/WSK/Handel",
+    name: "Handel",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import("../views/WSK/Verkauf.vue"),
+      import(/* webpackChunkName: "about" */ "../views/WSK/Handel.vue"),
   },
   {
-    path: "/WSK/Kunde",
-    name: "Kunde",
+    path: "/WSK/Entsorgung",
+    name: "Entsorgung",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
     component: () =>
-      import("../views/WSK/Kunde.vue"),
+      import(/* webpackChunkName: "about" */ "../views/WSK/Entsorgung.vue"),
   },
   {
     path: "/SlidingWindows/Frauen",
@@ -104,6 +122,94 @@ const routes = [
     meta: {
       hideNavbar: true,
     },
+  },
+  {
+    path: "/Siegel/FairTrade",
+    name: "FairTrade",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/FairTrade.vue"
+      ),
+  },
+  {
+    path: "/Siegel/GOTS",
+    name: "GOTS",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/GOTS.vue"
+      ),
+  },
+  {
+    path: "/Siegel/FWF",
+    name: "FWF",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/FWF.vue"
+      ),
+  },
+  {
+    path: "/Siegel/GrünerKnopf",
+    name: "GrünerKnopf",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/GrünerKnopf.vue"
+      ),
+  },
+  {
+    path: "/Siegel/Mischprodukte",
+    name: "Mischprodukte",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/Mischprodukte.vue"
+      ),
+  },
+  {
+    path: "/Siegel/Cotton",
+    name: "GrünerCotton",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/Cotton.vue"
+      ),
+  },
+  {
+    path: "/Siegel/Rohstoffsiegel",
+    name: "Rohstoffsiegel",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/Rohstoffsiegel.vue"
+      ),
+  },
+  {
+    path: "/Siegel/Textil",
+    name: "Textil",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(
+        /* webpackChunkName: "about" */ "../views/Siegel/Textil.vue"
+      ),
   },
 ];
 
