@@ -41,7 +41,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/WSK/Rohstofferzeugung.vue"),
+      import("../views/WSK/Rohstofferzeugung.vue"),
   },
   {
     path: "/WSK/Gebrauch",
@@ -50,7 +50,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/WSK/Gebrauch.vue"),
+      import("../views/WSK/Gebrauch.vue"),
   },
   {
     path: "/WSK/Herstellung",
@@ -59,7 +59,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/WSK/Herstellung.vue"),
+      import("../views/WSK/Herstellung.vue"),
   },
   {
     path: "/WSK/Distribution",
@@ -68,7 +68,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/WSK/Distribution.vue"),
+      import("../views/WSK/Distribution.vue"),
   },
   {
     path: "/WSK/Handel",
@@ -77,7 +77,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/WSK/Handel.vue"),
+      import("../views/WSK/Handel.vue"),
   },
   {
     path: "/WSK/Entsorgung",
@@ -86,7 +86,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/WSK/Entsorgung.vue"),
+      import("../views/WSK/Entsorgung.vue"),
   },
   {
     path: "/SlidingWindows/Frauen",
@@ -131,7 +131,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/FairTrade.vue"
+        "../views/Siegel/FairTrade.vue"
       ),
   },
   {
@@ -142,7 +142,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/GOTS.vue"
+        "../views/Siegel/GOTS.vue"
       ),
   },
   {
@@ -153,7 +153,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/FWF.vue"
+        "../views/Siegel/FWF.vue"
       ),
   },
   {
@@ -164,7 +164,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/GrünerKnopf.vue"
+        "../views/Siegel/GrünerKnopf.vue"
       ),
   },
   {
@@ -175,7 +175,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/Mischprodukte.vue"
+        "../views/Siegel/Mischprodukte.vue"
       ),
   },
   {
@@ -186,7 +186,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/Cotton.vue"
+        "../views/Siegel/Cotton.vue"
       ),
   },
   {
@@ -197,7 +197,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/Rohstoffsiegel.vue"
+        "../views/Siegel/Rohstoffsiegel.vue"
       ),
   },
   {
@@ -208,7 +208,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Siegel/Textil.vue"
+        "../views/Siegel/Textil.vue"
       ),
   },
 ];
