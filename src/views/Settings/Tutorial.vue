@@ -1,20 +1,18 @@
 <template>
   <div>
-    <div class="tutorialContainer">
-      <div class="tutorialFlexContainer" id="tutorialFlexContainer">
-        <div class="tutorialHeader shadow" id="header">Tutorial</div>
+    <div class="tutorialFlexContainer" id="tutorialFlexContainer">
+      <div class="tutorialHeader shadow" id="header">Tutorial</div>
 
-        <video id="video1" preload playsinline loop controls>
-          <source src="#" type="video/mp4" />
-        </video>
+      <video id="video1" preload playsinline loop controls>
+        <source src="#" type="video/mp4" />
+      </video>
 
-        <div class="tutorialSummary shadow">
-          <b>Herzlich Willkommen zu weAR check!</b><br /><br />
-          Mithilfe des Tutorials können Sie alle Funktionen der weAR check App
-          finden.
-        </div>
-        <BackButton />
+      <div class="tutorialSummary shadow">
+        <b>Herzlich Willkommen zu weAR check!</b><br /><br />
+        Mithilfe des Tutorials können Sie alle Funktionen der weAR check App
+        finden.
       </div>
+      <BackButton />
     </div>
   </div>
 </template>
@@ -46,14 +44,10 @@
 .tutorialFlexContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1.5em 1em 1.5em 1em;
-}
-
-.tutorialContainer {
-  margin-bottom: 2em;
   background-color: lightgray;
-  height: 850px;
+  height: 100vh;
 }
 </style>
 

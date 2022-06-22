@@ -1,18 +1,17 @@
 <template>
   <div>
-    <div class="scansContainer">
-      <div class="scansFlexContainer" id="scansFlexContainer">
-        <div class="scansHeader shadow" id="header">Deine Scans</div>
-        <div class="scansElement shadow" id="scan1">
-          <div class="scanDescription">Zara Basic T-Shirt Black</div>
-          <img src="@/assets/img/basicShirt.jpg" width="100" height="120" />
-        </div>
-        <div class="scansElement shadow" id="scan2">
-          <div class="scanDescription">Zara Jeans Blue</div>
-          <img src="@/assets/img/jeans.jpg" width="100" height="120" />
-        </div>
+    <div class="scansFlexContainer" id="scansFlexContainer">
+      <div class="scansHeader shadow" id="header">Deine Scans</div>
+      <div class="scansElement shadow" id="scan1">
+        <div class="scanDescription">Zara Basic T-Shirt Black</div>
+        <img src="@/assets/img/basicShirt.jpg" width="100" height="120" />
+      </div>
+      <div class="scansElement shadow" id="scan2">
+        <div class="scanDescription">Zara Jeans Blue</div>
+        <img src="@/assets/img/jeans.jpg" width="100" height="120" />
       </div>
     </div>
+
     <BackButton />
   </div>
 </template>
@@ -34,14 +33,11 @@
 .scansFlexContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1.5em 1em 1.5em 1em;
-}
-
-.scansContainer {
   margin-bottom: 2em;
   background-color: lightgray;
-  height: 850px;
+  height: 100vh;
 }
 
 .scansElement {

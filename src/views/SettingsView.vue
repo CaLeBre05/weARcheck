@@ -155,7 +155,7 @@ hr {
 .settingsFlexContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1.5em 1em 1.5em 1em;
   margin-bottom: 2em;
   background-color: lightgray;
