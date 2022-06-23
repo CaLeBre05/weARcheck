@@ -9,7 +9,7 @@
     <div v-if="!arSupported" class="card">your browser doesn't support AR</div>
     <canvas v-show="sessionStarted" ref="canvas"></canvas>
     <div class="button-wrapper">
-      <button class="shadow" @click="favoured = !favoured">
+      <button class="shadow" @click="favor()">
         <img
           :src="
             favoured
@@ -32,6 +32,7 @@
 <script>
 // import { Clock, PerspectiveCamera, Scene, WebGLRenderer } from 'three'
 import * as THREE from "three";
+import data from "../server/db.json";
 
 export default {
   name: "ARView",
@@ -74,6 +75,11 @@ export default {
     }
   },
   methods: {
+    favor() {
+      favoured = !favoured;
+      data.favor != data.favor;
+      console.log(data.favor);
+    },
     async startAR() {
       const isArSessionSupported =
         navigator.xr &&
