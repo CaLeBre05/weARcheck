@@ -2,7 +2,8 @@
   <div>
     <details class="shadow">
       <summary>
-        <slot name="boxTitle"></slot><span class="chevron"></span>
+        <slot name="boxTitle"></slot>
+        <span class="chevron"></span>
       </summary>
       <p><slot name="boxText"></slot></p>
     </details>
@@ -33,7 +34,7 @@ summary::marker {
 .chevron {
   width: 1rem;
   height: 1em;
-  content: url(http://localhost:8080/img/forward.9ba478b5.svg);
+  content: url(../assets/svg/back-arrow.svg);
   transition: transform 0.2s;
   transform: rotate(90deg);
 }
