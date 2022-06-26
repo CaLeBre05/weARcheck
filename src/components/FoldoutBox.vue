@@ -36,11 +36,11 @@ summary::marker {
   height: 1em;
   content: url(../assets/svg/back-arrow.svg);
   transition: transform 0.2s;
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }
 
 details[open] .chevron {
-  transform: rotate(270deg);
+  transform: rotate(90deg);
 }
 
 details p {
