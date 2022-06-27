@@ -5,8 +5,8 @@
       :image="'textile.png'"
       :color="'#fff'"
       :textColor="'#000000'"
+      :backgroundSize="'contain'"
     >
-      <h2 class="headerTextil">Textil</h2>
       <p class="einleitung-Textil">
         Das Fairtrade-Textile-Production-Siegel auf die gesamte
         Textilproduktion. Hierbei wird auch die vollständige Textillieferkette
@@ -39,13 +39,9 @@ export default {
   padding: 0;
 }
 
-.headerTextil {
-  margin-bottom: 16px;
-  margin-top: 10px;
-}
-
 .einleitung-Textil {
   font-size: 16px;
+  margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
 }

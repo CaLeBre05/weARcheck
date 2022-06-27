@@ -5,8 +5,8 @@
       :image="'cotton.png'"
       :color="'#fff'"
       :textColor="'#000000'"
+      :backgroundSize="'9em'"
     >
-      <h2 class="headerCotton">Baumwoll-Siegel</h2>
       <p class="einleitung-Cotton">
         Das Fairtrade-Produkt-Siegel für Baumwolle steht für fair angebaute und
         gehandelte Rohbaumwolle, die über alle Produktionsschritte direkt
@@ -36,13 +36,9 @@ export default {
   padding: 0;
 }
 
-.headerCotton {
-  margin-bottom: 16px;
-  margin-top: 10px;
-}
-
 .einleitung-Cotton {
   font-size: 16px;
+  margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
 }

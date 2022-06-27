@@ -5,8 +5,8 @@
       :image="'rohstoff.png'"
       :color="'#fff'"
       :textColor="'#000000'"
+      :backgroundSize="'9em'"
     >
-      <h2 class="headerRohstoffsiegel">Rohstoffsiegel</h2>
       <p class="einleitung-Rohstoffsiegel">
         Neben den Fairtrade-Produkt-Siegeln gibt es die
         Fairtrade-Rohstoff-Siegel für fair gehandelte Zutaten in einem
@@ -44,14 +44,9 @@ export default {
   margin: 0;
   padding: 0;
 }
-
-.headerRohstoffsiegel {
-  margin-bottom: 16px;
-  margin-top: 10px;
-}
-
 .einleitung-Rohstoffsiegel {
   font-size: 16px;
+  margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
 }
