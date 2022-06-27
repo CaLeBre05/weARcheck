@@ -5,8 +5,8 @@
       :image="'mischprodukte.png'"
       :color="'#fff'"
       :textColor="'#000000'"
+      :backgroundSize="'9em'"
     >
-      <h2 class="headerMischprodukte">Mischprodukte</h2>
       <p class="einleitung-Mischprodukte">
         Handelt es sich bei dem Produkt um ein Mischprodukt (Bsp. Kekse,
         Schokolade) dann ist das Fairtrade-Produkt-Siegel zusätzlich mit einem
@@ -40,13 +40,9 @@ export default {
   padding: 0;
 }
 
-.headerMischprodukte {
-  margin-bottom: 16px;
-  margin-top: 10px;
-}
-
 .einleitung-Mischprodukte {
   font-size: 16px;
+  margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
 }
