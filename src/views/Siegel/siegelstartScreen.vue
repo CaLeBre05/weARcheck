@@ -63,6 +63,7 @@ export default {
 }
 
 .headerSiegel {
+  margin-top: 10px;
   margin-bottom: 16px;
 }
 
