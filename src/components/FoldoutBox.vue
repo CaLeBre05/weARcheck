@@ -31,6 +31,10 @@ summary::marker {
   font-size: 1px;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .chevron {
   width: 1rem;
   height: 1em;

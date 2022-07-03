@@ -84,6 +84,7 @@ button {
 }
 .icon {
   height: 20px;
-  padding-right: 5px;
+  width: 22px;
+  margin-right: 8px;
 }
 </style>
