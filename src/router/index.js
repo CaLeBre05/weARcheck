@@ -189,14 +189,6 @@ const routes = [
     component: () =>
       import("../views/Settings/Tutorial.vue"),
   },
-  {
-    path: "/.well-known/assetlink.json",
-    name: "assetlink",
-    component: () =>
-      import(
-        "../.well-known/assetlink.json"
-      ),
-  },
 ];
 
 const router = new VueRouter({
