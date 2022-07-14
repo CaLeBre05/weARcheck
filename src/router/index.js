@@ -37,54 +37,42 @@ const routes = [
   {
     path: "/WSK/Rohstofferzeugung",
     name: "Rohstofferzeugung",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import("../views/WSK/Rohstofferzeugung.vue"),
   },
   {
     path: "/WSK/Gebrauch",
     name: "Gebrauch",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import("../views/WSK/Gebrauch.vue"),
   },
   {
     path: "/WSK/Herstellung",
     name: "Herstellung",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import("../views/WSK/Herstellung.vue"),
   },
   {
     path: "/WSK/Distribution",
     name: "Distribution",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import("../views/WSK/Distribution.vue"),
   },
   {
     path: "/WSK/Handel",
     name: "Handel",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import("../views/WSK/Handel.vue"),
   },
   {
     path: "/WSK/Entsorgung",
     name: "Entsorgung",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () =>
       import("../views/WSK/Entsorgung.vue"),
   },
@@ -126,9 +114,6 @@ const routes = [
   {
     path: "/Siegel/FairTrade",
     name: "FairTrade",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/FairTrade.vue"
@@ -137,9 +122,6 @@ const routes = [
   {
     path: "/Siegel/GOTS",
     name: "GOTS",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/GOTS.vue"
@@ -148,9 +130,6 @@ const routes = [
   {
     path: "/Siegel/FWF",
     name: "FWF",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/FWF.vue"
@@ -159,9 +138,6 @@ const routes = [
   {
     path: "/Siegel/GrünerKnopf",
     name: "GrünerKnopf",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/GrünerKnopf.vue"
@@ -170,9 +146,6 @@ const routes = [
   {
     path: "/Siegel/Mischprodukte",
     name: "Mischprodukte",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/Mischprodukte.vue"
@@ -181,9 +154,6 @@ const routes = [
   {
     path: "/Siegel/Cotton",
     name: "GrünerCotton",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/Cotton.vue"
@@ -192,9 +162,6 @@ const routes = [
   {
     path: "/Siegel/Rohstoffsiegel",
     name: "Rohstoffsiegel",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/Rohstoffsiegel.vue"
@@ -203,9 +170,6 @@ const routes = [
   {
     path: "/Siegel/Textil",
     name: "Textil",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
         "../views/Siegel/Textil.vue"
@@ -214,22 +178,24 @@ const routes = [
   {
     path: "/Settings/DeineScans",
     name: "DeineScans",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ "../views/Settings/DeineScans.vue"
+        "../views/Settings/DeineScans.vue"
       ),
   },
   {
     path: "/Settings/Tutorial",
     name: "Tutorial",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Settings/Tutorial.vue"),
+      import("../views/Settings/Tutorial.vue"),
+  },
+  {
+    path: "/.well-known/assetlink.json",
+    name: "assetlink",
+    component: () =>
+      import(
+        "../.well-known/assetlink.json"
+      ),
   },
 ];
 
