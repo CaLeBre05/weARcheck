@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "de.thnuernberg.bme.wearcheck",
+            "sha256_cert_fingerprints": [
+                "05:34:91:93:80:1C:00:1B:E5:9F:BF:10:F3:40:38:A6:86:D4:25:09:6A:9C:BA:FD:74:88:FB:94:B5:44:63:A3"
+            ]
+        }
+    }
+]
