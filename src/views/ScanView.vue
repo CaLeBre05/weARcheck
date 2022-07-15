@@ -149,8 +149,8 @@ export default {
       this.showCard = false;
     },
     navigateToAR() {
-      //this.$router.push({ name: "ARView", params: { _id: this.result._id } });
-      window.open("https://wear-check.web.app/unity", "_blanc");
+      this.$router.push({ name: "ARView", params: { _id: this.result._id } });
+      //window.open("https://wear-check.web.app/unity", "_blanc");
     },
   },
 };
