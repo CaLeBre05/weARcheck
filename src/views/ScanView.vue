@@ -23,7 +23,9 @@
         href="https://www.google.com/search?client=firefox-b-d&q=twa+open+link+in+extern+browser"
         >https://www.google.com/search?client=firefox-b-d&q=twa+open+link+in+extern+browser</a
       >
-      <a href="doom-fire://review">Rate app now!</a>
+      <a href="subscriptionschemetwa://www.package.com"
+        >subscriptionschemetwa://www.package.com</a
+      >
 
       <button class="ar-btn shadow" @click="navigateToAR()">AR-Ansicht</button>
       <button class="new-btn shadow" @click="newScan()">neuer Scan</button>
