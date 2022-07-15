@@ -103,10 +103,7 @@ const routes = [
   {
     path: "/ARView",
     name: "ARView",
-    component: () =>
-      import(
-        "../views/ARView.vue"
-      ),
+    beforeEnter() { location.href = 'http://https://wear-check.web.app/unity' },
     meta: {
       hideNavbar: true,
     },

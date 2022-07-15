@@ -16,7 +16,7 @@
       <div class="header">Scan erfolgreich!</div>
       <div class="sub-header">Ihr gescanntes kleidungsstück:</div>
       <img width="150" height="150" v-bind:src="this.result.picture" />
-      <a href="https://wear-check.web.app/unity"
+      <a href="https://wear-check.web.app/unity" target="_blank"
         >https://wear-check.web.app/unity</a
       >
       <a
