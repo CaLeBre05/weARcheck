@@ -16,7 +16,6 @@
       <div class="header">Scan erfolgreich!</div>
       <div class="sub-header">Ihr gescanntes kleidungsstück:</div>
       <img width="150" height="150" v-bind:src="this.result.picture" />
-      <a href="example://gizmos">example://gizmos</a>
       <button class="ar-btn shadow" @click="navigateToAR()">AR-Ansicht</button>
       <button class="new-btn shadow" @click="newScan()">neuer Scan</button>
     </div>
@@ -150,7 +149,9 @@ export default {
     },
     navigateToAR() {
       //this.$router.push({ name: "ARView", params: { _id: this.result._id } });
-      window.open("example://gizmos", "_blanc");
+      let link = "example://gizmos?id=" + this.result._id;
+      console.log(link);
+      window.open(link, "_blanc");
     },
   },
 };
