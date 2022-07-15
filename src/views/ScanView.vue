@@ -16,7 +16,7 @@
       <div class="header">Scan erfolgreich!</div>
       <div class="sub-header">Ihr gescanntes kleidungsstück:</div>
       <img width="150" height="150" v-bind:src="this.result.picture" />
-      <a href="http://www.plantplaces.com/colorcapture.shtml">Click Me!</a>
+      <a href="https://wear-check.web.app/unity">Click Me!</a>
       <button class="ar-btn shadow" @click="navigateToAR()">AR-Ansicht</button>
       <button class="new-btn shadow" @click="newScan()">neuer Scan</button>
     </div>
