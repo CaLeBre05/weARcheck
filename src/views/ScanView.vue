@@ -26,6 +26,7 @@
       <a href="subscriptionschemetwa://www.package.com"
         >subscriptionschemetwa://www.package.com</a
       >
+      <a href="example://gizmos">example://gizmos</a>
 
       <button class="ar-btn shadow" @click="navigateToAR()">AR-Ansicht</button>
       <button class="new-btn shadow" @click="newScan()">neuer Scan</button>
