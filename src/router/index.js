@@ -103,7 +103,7 @@ const routes = [
   {
     path: "/ARView",
     name: "ARView",
-    beforeEnter() { location.href = 'http://https://wear-check.web.app/unity' },
+    beforeEnter() { location.href = 'https://wear-check.web.app/unity' },
     meta: {
       hideNavbar: true,
     },
