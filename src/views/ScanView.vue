@@ -16,18 +16,7 @@
       <div class="header">Scan erfolgreich!</div>
       <div class="sub-header">Ihr gescanntes kleidungsstück:</div>
       <img width="150" height="150" v-bind:src="this.result.picture" />
-      <a href="https://wear-check.web.app/unity" target="_blank"
-        >https://wear-check.web.app/unity</a
-      >
-      <a
-        href="https://www.google.com/search?client=firefox-b-d&q=twa+open+link+in+extern+browser"
-        >https://www.google.com/search?client=firefox-b-d&q=twa+open+link+in+extern+browser</a
-      >
-      <a href="subscriptionschemetwa://www.package.com"
-        >subscriptionschemetwa://www.package.com</a
-      >
       <a href="example://gizmos">example://gizmos</a>
-
       <button class="ar-btn shadow" @click="navigateToAR()">AR-Ansicht</button>
       <button class="new-btn shadow" @click="newScan()">neuer Scan</button>
     </div>
@@ -160,8 +149,8 @@ export default {
       this.showCard = false;
     },
     navigateToAR() {
-      this.$router.push({ name: "ARView", params: { _id: this.result._id } });
-      //window.open("https://wear-check.web.app/unity", "_blanc");
+      //this.$router.push({ name: "ARView", params: { _id: this.result._id } });
+      window.open("example://gizmos", "_blanc");
     },
   },
 };
