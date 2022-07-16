@@ -3,8 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import firebase from 'firebase/compat/app';
 import './registerServiceWorker'
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
 
 Vue.config.productionTip = false;
+Vue.use(Toast);
 
 const firebaseConfig = {
   apiKey: "AIzaSyCK5qFVXFdf3FuM9wyz5w2EAlAiJuSjf0Y",

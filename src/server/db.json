@@ -2,13 +2,13 @@
     {
         "_id": "1",
         "name": "Lederhose",
-        "brand": "Lederhose & Co",
+        "brand": "Lederhosen Aigner",
         "picture": "https://media.cdn.kaufland.de/product-images/2048x2048/cd8b28a456538e3d6c8247c3267a100f.webp"
     },
     {
         "_id": "2",
-        "product_name": "T-Shirt weiß",
-        "brand": "H&M",
+        "name": "T-Shirt weiß",
+        "brand": "Zara",
         "picture": "https://www.jolie.de/sites/default/files/styles/image_gallery870w/public/2020-05/weisses-t-shirt-basic-baumwolle.webp?h=f55b4ec2&itok=ABuBGAoP"
     }
 ]

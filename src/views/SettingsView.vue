@@ -49,21 +49,21 @@
       <div class="settingsElement shadow" id="element3">
         <div class="settingSummary">Über weAR check</div>
         <hr />
-        <div class="setting">
+        <div class="setting" @click="openToast('Impressum')">
           <div>Impressum</div>
           <div class="settingsArrow">
             <img src="../assets/svg/forward.svg" />
           </div>
         </div>
         <hr />
-        <div class="setting">
+        <div class="setting" @click="openToast('Nutzungsbedingungen')">
           <div>Nutzungsbedingungen</div>
           <div class="settingsArrow">
             <img src="../assets/svg/forward.svg" />
           </div>
         </div>
         <hr />
-        <div class="setting">
+        <div class="setting" @click="openToast('Datenschutz')">
           <div>Datenschutz</div>
           <div class="settingsArrow">
             <img src="../assets/svg/forward.svg" />
@@ -159,6 +159,7 @@ hr {
   padding: 1.5em 1em 1.5em 1em;
   margin-bottom: 2em;
   background-color: lightgray;
+  min-height: calc(100vh - 50px);
 }
 
 .settingsHeader {
@@ -181,6 +182,7 @@ hr {
 </style>
 <script>
 import BackButton from "@/components/backButton.vue";
+
 export default {
   name: "SettingsView",
   components: {
@@ -189,6 +191,14 @@ export default {
   methods: {
     navigate(path) {
       this.$router.push("/Settings/" + path);
+    },
+    openToast(name) {
+      this.$toast("Die Seite " + name + " ist noch nicht implementiert", {
+        hideProgressBar: true,
+        timeout: 2000,
+        type: "warning",
+        position: "top-center",
+      });
     },
   },
 };

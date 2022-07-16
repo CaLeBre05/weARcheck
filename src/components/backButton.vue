@@ -13,7 +13,7 @@
   position: fixed;
   height: 3em;
   width: 3em;
-  top: 3em;
+  top: 2.7em;
   left: 2em;
   display: flex;
   justify-content: center;
