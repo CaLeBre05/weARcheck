@@ -12,8 +12,8 @@
         Mithilfe des Tutorials können Sie alle Funktionen der weAR check App
         finden.
       </div>
-      <BackButton />
     </div>
+    <BackButton />
   </div>
 </template>
 

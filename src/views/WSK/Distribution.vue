@@ -1,5 +1,6 @@
 <template>
   <div>
+    <BackButton />
     <PageWrapper
       :headline="'Distribution'"
       :image="'WSKCliparts/car.svg'"
@@ -8,7 +9,6 @@
       :backgroundColor="'#e1f5a9'"
       :backgroundSize="'8em'"
     >
-      <BackButton />
       <div class="verteilung-content">
         Da ca. 90% der in Deutschland gekauften Kleidung aus dem Ausland stammt,
         ist der Transport einer der wichtigsten Punkte der Wertschöpfungskette.

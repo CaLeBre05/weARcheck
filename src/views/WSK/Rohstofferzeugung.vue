@@ -1,5 +1,6 @@
 <template>
   <div>
+    <BackButton />
     <PageWrapper
       :headline="'Rohstofferzeugung'"
       :image="'WSKCliparts/tree.svg'"
@@ -8,7 +9,6 @@
       :backgroundColor="'#f5fbef'"
       :backgroundSize="'8em'"
     >
-      <BackButton />
       <div class="rohmaterialien-content">
         Am Anfang der Wertschöpfungskette steht die Rohstofferzeugung. Diese
         beinhaltet die Produktion des Saatguts, den Anbau sowie die Ernte der

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <BackButton />
     <PageWrapper
       :headline="'Handel'"
       :image="'WSKCliparts/shopping-bag.svg'"
@@ -8,7 +9,6 @@
       :backgroundColor="'#d9ef92'"
       :backgroundSize="'8em'"
     >
-      <BackButton />
       <div class="verkauf-content">
         Der Textilhandel ergibt sich aus dem Onlinehandel und den Einzelhandel.
         Während des Online-Einkaufserlebnis praktisch und zeitsparend von fast

@@ -150,7 +150,6 @@ export default {
     navigateToAR() {
       //this.$router.push({ name: "ARView", params: { _id: this.result._id } });
       let link = "wearcheck://unity?id=" + this.result._id;
-      console.log(link);
       window.open(link, "_blanc");
     },
   },

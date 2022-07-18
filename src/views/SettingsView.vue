@@ -1,9 +1,8 @@
 <template>
   <div>
+    <BackButton />
     <div class="settingsFlexContainer" id="settingsFlexContainer">
-      <div class="settingsHeader shadow" id="header">
-        <span><BackButton /></span>Menü
-      </div>
+      <div class="settingsHeader shadow" id="header"><span></span>Menü</div>
       <div class="settingsElement shadow" id="element1">
         <div class="settingSummary">Benachrichtigungen</div>
         <hr />

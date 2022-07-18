@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="shadow">
     <nav class="navbar" v-if="!$route.meta.hideNavbar">
       <router-link to="/" class="link"
         ><img src="./assets/img/home.png" class="img"
@@ -27,6 +27,10 @@ export default {
 </script>
 
 <style>
+html,
+body {
+  height: 100%; /*both html and body*/
+}
 #bb {
   top: 3em;
   left: 3em;
@@ -36,11 +40,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   font-family: "Nunito", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white,
+    rgba(0, 0, 0, 0.2) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 10px 20px;
+  min-height: 100vh;
 }
 .navbar {
   position: fixed;
+  max-width: 1000px;
   bottom: 0px;
-  left: 0px;
   display: flex;
   flex: 1 1 0px;
   align-items: center;

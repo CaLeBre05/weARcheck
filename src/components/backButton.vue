@@ -1,26 +1,30 @@
 <template>
-  <button type="submit" class="backButton" @click="goBack()">
-    <img class="backButton" src="../assets/svg/back-arrow.svg" />
-  </button>
+  <div class="wrapper">
+    <button type="submit" class="backButton" @click="goBack()">
+      <img class="svg" src="../assets/svg/back-arrow.svg" />
+    </button>
+  </div>
 </template>
 
 <style scoped>
+.wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 2.3em;
+}
 .backButton {
-  z-index: 100;
+  margin-left: 2em;
   border-radius: 50px;
   border: none;
   background-color: rgba(255, 255, 255, 0.7);
-  position: fixed;
   height: 3em;
   width: 3em;
-  top: 2.7em;
-  left: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.backbutton {
+.svg {
   font-size: 13.3333px;
 }
 </style>

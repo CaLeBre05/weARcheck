@@ -29,8 +29,9 @@ export default {
   data() {
     return {
       backgroundImage: {
-        backgroundImage: `url(${require("@/assets/img/" +
-          this.button__image)})`,
+        backgroundImage: this.button__image
+          ? `url(${require("@/assets/img/" + this.button__image)})`
+          : {},
       },
     };
   },

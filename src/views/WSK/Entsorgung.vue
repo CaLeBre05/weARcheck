@@ -1,5 +1,7 @@
 <template>
   <div>
+    <BackButton />
+
     <PageWrapper
       :headline="'Entsorgung'"
       :image="'WSKCliparts/trash.svg'"
@@ -8,7 +10,6 @@
       :backgroundColor="'#d9ed92'"
       :backgroundSize="'8em'"
     >
-      <BackButton />
       <div class="kunde-content">
         Die Entsorgung der gebrauchten Kleidung findet auf unterschiedliche Art
         und Weise statt. Jährlich werden 500 Millionen Tonnen Textilmüll

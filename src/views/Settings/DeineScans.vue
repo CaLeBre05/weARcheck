@@ -15,6 +15,9 @@
         </div>
         <img v-bind:src="data[1].picture" width="100" height="120" />
       </div>
+      <button class="ar-button" :color="'white'" @click="openAr()">
+        In AR ansehen
+      </button>
     </div>
 
     <BackButton />
@@ -53,6 +56,17 @@
   margin-bottom: 1em;
   border-radius: 5px;
 }
+.ar-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background: rgb(52, 160, 164);
+  color: white;
+  width: fit-content;
+  margin: 2em auto;
+}
 </style>
 
 <script>
@@ -70,9 +84,9 @@ export default {
     };
   },
   methods: {
-    openAR() {
-      let link = "wearcheck://unity?id=" + this.result._id;
-      console.log(link);
+    openAr() {
+      console.log("ar");
+      let link = "wearcheck://unity";
       window.open(link, "_blanc");
     },
   },

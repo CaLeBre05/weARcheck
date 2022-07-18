@@ -1,5 +1,6 @@
 <template>
   <div>
+    <BackButton />
     <PageWrapper
       :headline="'Gebrauch'"
       :image="'WSKCliparts/hanger.svg'"
@@ -8,7 +9,6 @@
       :backgroundColor="'#e1f5a9'"
       :backgroundSize="'8em'"
     >
-      <BackButton />
       <div class="anbieter-content">
         Nach dem Kauf eines Textilproduktes ist der Kunde ein wichtiger Punkt
         der Wertschöpfungskette. Beim Endverbraucher angekommen wird die

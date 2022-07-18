@@ -1,5 +1,6 @@
 <template>
   <div>
+    <BackButton />
     <PageWrapper
       :headline="'Herstellung'"
       :image="'WSKCliparts/sewing-machine.svg'"
@@ -8,7 +9,6 @@
       :backgroundColor="'#ecf6ce'"
       :backgroundSize="'8em'"
     >
-      <BackButton />
       <div class="fabrik-content">
         Die Herstellung von Textilien verteilt sich auf mehrere Prozesse. Zu
         Beginn wird das Rohmaterial entkörnt. Hierbei werden die Fasern, Samen
