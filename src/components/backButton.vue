@@ -19,13 +19,12 @@
   background-color: rgba(255, 255, 255, 0.7);
   height: 3em;
   width: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 13.3333px;
 }
 
 .svg {
+  width: 100%;
+  height: 100%;
   font-size: 13.3333px;
 }
 </style>
