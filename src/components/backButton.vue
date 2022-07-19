@@ -27,6 +27,8 @@
 
 .svg {
   font-size: 13.3333px;
+  height: 3em;
+  width: 3em;
 }
 </style>
 
